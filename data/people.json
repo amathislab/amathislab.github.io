@@ -78,6 +78,19 @@
     "status": "current"
   },
   {
+    "id": "michal-grudzien",
+    "name": "Michał Grudzień",
+    "role": "PhD Student",
+    "avatar": "/images/people/michal.jpg",
+    "project": "behavior analysis",
+    "links": {
+      "website": "https://people.epfl.ch/michal.grudzien",
+      "scholar": "https://scholar.google.com/citations?user=vN2ALVYAAAAJ&hl=en"
+    },
+    "tags": ["behavior analysis", "machine learning"],
+    "status": "current"
+  },
+  {
     "id": "chengkun-li",
     "name": "Chengkun Li",
     "role": "PhD Student",
