@@ -96,8 +96,56 @@ Edit `data/research.json` to add or modify research directions.
 
 ## Contributing
 
-This is a research lab website. For updates or corrections:
+We welcome contributions to improve the website! All changes should go through the pull request process to ensure quality and allow for review.
 
-1. Create a feature branch
-2. Make your changes
-3. Submit a pull request
+### Workflow
+
+1. **Fork and clone** the repository (external contributors) or create a branch (team members)
+
+   ```bash
+   git checkout -b update/your-change-name
+   ```
+
+2. **Make your changes** following our development best practices
+   - Run `npm run dev` to preview changes locally
+   - Test responsiveness on different screen sizes
+   - Ensure accessibility standards are met
+
+3. **Test thoroughly** before committing
+
+   ```bash
+   npm run lint        # Check code quality
+   npm test            # Run test suite
+   ```
+
+4. **Commit your changes** with clear, descriptive messages
+
+   ```bash
+   git add .
+   git commit -m "feat: add new team member profile"
+   ```
+
+5. **Push to your branch** and create a pull request
+
+   ```bash
+   git push origin update/your-change-name
+   ```
+
+6. **Open a Pull Request** on GitHub
+   - Provide a clear title and description
+   - Explain what changes were made
+   - Request review from team members
+
+7. **Merge** once approved
+   - Squash commits if there are many small changes
+   - Delete the feature branch after merging
+
+### Quick Content Updates
+
+For simple content updates (team members, publications, research areas):
+
+1. **Always start with a pull request** - even for small changes
+2. Edit the relevant JSON file in `/data/`
+3. Follow the existing data structure and formatting
+4. Verify the change appears correctly in development mode
+5. Submit PR with clear description of what was added/changed
