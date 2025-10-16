@@ -1,18 +1,46 @@
 #!/usr/bin/env sh
-set -euo pipefail
 
-printf "\033[1m Running local pre-commit checks (mirrors CI)\033[0m\n\n"
+echo "Running pre-commit checks (mirrors GitHub Actions)..."
+echo ""
 
-run_step() {
-  label="$1"
-  shift
-  printf "-> %s\n" "$label"
-  "$@"
-  printf "%s passed\n\n" "$label"
-}
+# Run type checking
+echo "Type checking..."
+npm run typecheck
+if [ $? -ne 0 ]; then
+  echo "Type check failed. Commit aborted."
+  exit 1
+fi
+echo "Type check passed"
+echo ""
 
-run_step "Lint" npm run lint
-run_step "Tests" npm test
-run_step "Production build" sh -c 'NODE_ENV=production npm run build'
+# Run linting
+echo "Linting..."
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "Linting failed. Commit aborted."
+  exit 1
+fi
+echo "Linting passed"
+echo ""
 
-printf "All pre-commit checks passed!\n"
+# Run tests
+echo "Running tests..."
+npm test
+if [ $? -ne 0 ]; then
+  echo "Tests failed. Commit aborted."
+  exit 1
+fi
+echo "Tests passed"
+echo ""
+
+# Run production build (catches build-time errors like the next-themes import issue)
+echo "Production build..."
+NODE_ENV=production npm run build
+if [ $? -ne 0 ]; then
+  echo "Build failed. Commit aborted."
+  exit 1
+fi
+echo "Build passed"
+echo ""
+
+echo "All pre-commit checks passed!"
