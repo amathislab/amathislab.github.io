@@ -16,13 +16,15 @@ export function useHeaderOffset(additionalOffset = 0) {
     }
 
     const updateOffset = () => {
-      const header = document.querySelector<HTMLElement>("header")
-      if (!header) {
+      const target =
+        document.querySelector<HTMLElement>("[data-header-height]") ??
+        document.querySelector<HTMLElement>("header")
+      if (!target) {
         setOffset(additionalOffset)
         return
       }
 
-      const { height } = header.getBoundingClientRect()
+      const { height } = target.getBoundingClientRect()
       setOffset(height + additionalOffset)
     }
 
@@ -31,10 +33,12 @@ export function useHeaderOffset(additionalOffset = 0) {
 
     let resizeObserver: ResizeObserver | null = null
     if (typeof ResizeObserver !== "undefined") {
-      const header = document.querySelector<HTMLElement>("header")
-      if (header) {
+      const target =
+        document.querySelector<HTMLElement>("[data-header-height]") ??
+        document.querySelector<HTMLElement>("header")
+      if (target) {
         resizeObserver = new ResizeObserver(updateOffset)
-        resizeObserver.observe(header)
+        resizeObserver.observe(target)
       }
     }
 
