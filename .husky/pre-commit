@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+printf "\033[1m Running local pre-commit checks (mirrors CI)\033[0m\n\n"
+
+run_step() {
+  label="$1"
+  shift
+  printf "-> %s\n" "$label"
+  "$@"
+  printf "%s passed\n\n" "$label"
+}
+
+run_step "Lint" npm run lint
+run_step "Tests" npm test
+run_step "Production build" sh -c 'NODE_ENV=production npm run build'
+
+printf "All pre-commit checks passed!\n"
