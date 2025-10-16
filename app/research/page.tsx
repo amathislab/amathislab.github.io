@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, FileText, Globe } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -99,7 +99,7 @@ export default function ResearchPage() {
                       <div>
                         <h3 className="mb-4 text-lg font-semibold">Key Tools & Projects</h3>
                         <div className="grid gap-4 sm:grid-cols-2">
-                          {area.tools.map((tool) => (
+                          {area.tools.map((tool: any) => (
                             <Card key={tool.name} className="group transition-all hover:shadow-soft">
                               <CardHeader>
                                 <CardTitle className="flex items-center justify-between text-base">
@@ -113,7 +113,7 @@ export default function ResearchPage() {
                                 </CardDescription>
                               </CardHeader>
                               <CardContent>
-                                <div className="flex gap-2">
+                                <div className="flex flex-wrap gap-2">
                                   {tool.github && (
                                     <Button asChild variant="outline" size="sm">
                                       <a
@@ -134,7 +134,34 @@ export default function ResearchPage() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                       >
+                                        <FileText className="mr-2 size-3" />
+                                        arXiv
+                                        <ExternalLink className="ml-2 size-3" />
+                                      </a>
+                                    </Button>
+                                  )}
+                                  {tool.paper && (
+                                    <Button asChild variant="outline" size="sm">
+                                      <a
+                                        href={tool.paper}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FileText className="mr-2 size-3" />
                                         Paper
+                                        <ExternalLink className="ml-2 size-3" />
+                                      </a>
+                                    </Button>
+                                  )}
+                                  {tool.website && (
+                                    <Button asChild variant="outline" size="sm">
+                                      <a
+                                        href={tool.website}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <Globe className="mr-2 size-3" />
+                                        Website
                                         <ExternalLink className="ml-2 size-3" />
                                       </a>
                                     </Button>

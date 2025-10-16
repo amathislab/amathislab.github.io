@@ -113,7 +113,7 @@ export default function PositionsPage() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-6 flex gap-3">
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
                     <Link href="/contact">
                       Contact Us

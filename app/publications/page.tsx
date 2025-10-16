@@ -1,6 +1,6 @@
 "use client"
 
-import { ExternalLink, FileText, Code } from "lucide-react"
+import { ExternalLink, FileText, Code, Globe } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 import { Badge } from "@/components/ui/badge"
@@ -97,8 +97,8 @@ export default function PublicationsPage() {
       >
         <div className="section-container">
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide pb-1">
-              <span className="text-sm font-medium shrink-0">Year:</span>
+            <div className="scrollbar-hide flex items-center gap-2 overflow-x-auto pb-1">
+              <span className="shrink-0 text-sm font-medium">Year:</span>
               <div className="flex items-center gap-2">
                 <Button
                   variant={selectedYear === null ? "default" : "outline"}
@@ -121,8 +121,8 @@ export default function PublicationsPage() {
                 ))}
               </div>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide pb-1">
-              <span className="text-sm font-medium shrink-0">Type:</span>
+            <div className="scrollbar-hide flex items-center gap-2 overflow-x-auto pb-1">
+              <span className="shrink-0 text-sm font-medium">Type:</span>
               <div className="flex items-center gap-2">
                 <Button
                   variant={selectedType === null ? "default" : "outline"}
@@ -215,6 +215,15 @@ export default function PublicationsPage() {
                                 <a href={pub.links.github} target="_blank" rel="noopener noreferrer">
                                   <Code className="mr-2 size-4" />
                                   Code
+                                  <ExternalLink className="ml-2 size-3" />
+                                </a>
+                              </Button>
+                            )}
+                            {pub.links.website && (
+                              <Button asChild variant="outline" size="sm">
+                                <a href={pub.links.website} target="_blank" rel="noopener noreferrer">
+                                  <Globe className="mr-2 size-4" />
+                                  Website
                                   <ExternalLink className="ml-2 size-3" />
                                 </a>
                               </Button>

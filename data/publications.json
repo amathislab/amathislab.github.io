@@ -23,7 +23,8 @@
     "type": "preprint",
     "tags": ["action recognition", "multimodal learning", "LLMs"],
     "links": {
-      "arxiv": "https://arxiv.org/abs/2503.18712"
+      "arxiv": "https://arxiv.org/abs/2503.18712",
+      "website": "https://mmathislab.github.io/llavaction/"
     },
     "featured": true
   },

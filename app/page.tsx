@@ -1,4 +1,4 @@
-import { ArrowRight, Brain, Code2, Telescope } from "lucide-react"
+import { ArrowRight, Brain, Code2, Telescope, FileText, Globe, Code } from "lucide-react"
 import Link from "next/link"
 
 import { AnimatedLogo } from "@/components/animations/AnimatedLogo"
@@ -178,18 +178,36 @@ export default function Home() {
                     </div>
                     <p className="text-sm text-muted-foreground">{pub.venue}</p>
                     {pub.links && (
-                      <div className="flex gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {pub.links.arxiv && (
                           <Button asChild variant="outline" size="sm">
                             <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer">
+                              <FileText className="mr-2 size-3" />
                               arXiv
+                            </a>
+                          </Button>
+                        )}
+                        {pub.links.biorxiv && (
+                          <Button asChild variant="outline" size="sm">
+                            <a href={pub.links.biorxiv} target="_blank" rel="noopener noreferrer">
+                              <FileText className="mr-2 size-3" />
+                              bioRxiv
                             </a>
                           </Button>
                         )}
                         {pub.links.github && (
                           <Button asChild variant="outline" size="sm">
                             <a href={pub.links.github} target="_blank" rel="noopener noreferrer">
+                              <Code className="mr-2 size-3" />
                               Code
+                            </a>
+                          </Button>
+                        )}
+                        {pub.links.website && (
+                          <Button asChild variant="outline" size="sm">
+                            <a href={pub.links.website} target="_blank" rel="noopener noreferrer">
+                              <Globe className="mr-2 size-3" />
+                              Website
                             </a>
                           </Button>
                         )}
@@ -248,7 +266,7 @@ export default function Home() {
               in behavioral analysis and modeling sensorimotor learning. We also regularly recruit
               postdoctoral fellows.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
               <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link href="/positions">
                   View Open Positions
