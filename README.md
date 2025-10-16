@@ -100,7 +100,7 @@ We welcome contributions to improve the website! All changes should go through t
 
 ### Workflow
 
-1. **Fork and clone** the repository (external contributors) or create a branch (team members)
+1. **Fork and clone** the repository and create a branch for your update:
 
    ```bash
    git checkout -b update/your-change-name
