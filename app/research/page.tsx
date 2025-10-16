@@ -51,7 +51,7 @@ function MediaMosaic({ images, title }: { images: string[]; title: string }) {
 
   if (images.length === 1) {
     return (
-      <figure className="overflow-hidden rounded-xl ring-1 ring-border/50">
+      <figure className="overflow-hidden rounded-xl bg-white ring-1 ring-border/50 dark:bg-white/95">
         <img
           src={images[0]}
           alt={title}
@@ -76,7 +76,7 @@ function MediaMosaic({ images, title }: { images: string[]; title: string }) {
       {images.map((img, idx) => (
         <figure
           key={idx}
-          className="group relative aspect-[4/3] overflow-hidden rounded-xl ring-1 ring-border/50 transition-all duration-200 hover:scale-[1.01] hover:shadow-lg"
+          className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-white ring-1 ring-border/50 transition-all duration-200 hover:scale-[1.01] hover:shadow-lg dark:bg-white/95"
         >
           <img
             src={img}

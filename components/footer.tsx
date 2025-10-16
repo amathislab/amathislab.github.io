@@ -63,7 +63,15 @@ export function Footer() {
                   alt="EPFL"
                   width={150}
                   height={64}
-                  className="h-10 w-auto"
+                  className="h-10 w-auto dark:hidden"
+                  priority={false}
+                />
+                <Image
+                  src="/images/footer/epfl_logo_r.png"
+                  alt="EPFL"
+                  width={150}
+                  height={64}
+                  className="hidden h-10 w-auto dark:inline"
                   priority={false}
                 />
               </a>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import * as React from "react"
 import { createPortal } from "react-dom"
 
+import { ThemeToggle } from "@/components/layout/ThemeToggle"
 import { Button } from "@/components/ui/button"
 import { useHeaderOffset } from "@/lib/hooks/useHeaderOffset"
 import { cn } from "@/lib/utils"
@@ -68,7 +69,8 @@ export function Header() {
             <span className="text-xl font-bold tracking-tight">Mathis Group</span>
           </Link>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
           <Button
             variant="ghost"
             size="icon"
@@ -84,21 +86,24 @@ export function Header() {
             )}
           </Button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-8">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                pathname === item.href
-                  ? "text-foreground"
-                  : "text-muted-foreground"
-              )}
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="hidden items-center gap-6 lg:flex">
+          <div className="flex items-center gap-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-primary",
+                  pathname === item.href
+                    ? "text-foreground"
+                    : "text-muted-foreground"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <ThemeToggle />
         </div>
       </nav>
 

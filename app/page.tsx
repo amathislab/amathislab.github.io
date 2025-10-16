@@ -161,7 +161,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     {pubWithImage.image && (
-                      <div className="overflow-hidden rounded-lg border bg-muted/30">
+                      <div className="overflow-hidden rounded-lg border bg-white shadow-sm dark:bg-white/90">
                         <img
                           src={pubWithImage.image}
                           alt={pub.title}

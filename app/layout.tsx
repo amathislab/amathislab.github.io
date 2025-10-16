@@ -5,6 +5,7 @@ import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { SkipLink } from "@/components/layout/SkipLink";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,12 +36,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
       <body className="flex min-h-screen flex-col antialiased">
-        <SkipLink />
-        <Header />
-        <main id="main-content" className="flex-1">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <SkipLink />
+          <Header />
+          <main id="main-content" className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
