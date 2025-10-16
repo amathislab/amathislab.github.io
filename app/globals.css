@@ -64,6 +64,22 @@
     scroll-behavior: smooth;
   }
 
+  ::selection {
+    background: #cce4ff;
+    color: #1f2933;
+  }
+
+  ::-moz-selection {
+    background: #cce4ff;
+    color: #1f2933;
+  }
+
+  .dark ::selection,
+  .dark ::-moz-selection {
+    background: rgba(96, 165, 250, 0.35);
+    color: #f8fafc;
+  }
+
   /* Focus styles for accessibility */
   :focus-visible {
     @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;

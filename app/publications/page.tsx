@@ -78,7 +78,7 @@ export default function PublicationsPage() {
               Our research contributions spanning computational neuroscience, machine learning,
               and computer vision. For a complete list, visit our{" "}
               <a
-                href="https://scholar.google.com"
+                href="https://scholar.google.com/citations?user=Y1xCzE0AAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
