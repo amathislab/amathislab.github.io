@@ -17,6 +17,7 @@ const footerLinks = {
     { name: "DeepLabCut", href: "https://github.com/DeepLabCut/DeepLabCut" },
     { name: "GitHub", href: "https://github.com/amathislab" },
     { name: "Hugging Face", href: "https://huggingface.co/amathislab" },
+    { name: "Zenodo", href: "https://zenodo.org/communities/amg/" },
   ],
 }
 
