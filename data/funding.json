@@ -1,0 +1,98 @@
+[
+  {
+    "id": "snsf-2024",
+    "period": "2024 - 2028",
+    "title": "SNSF Project Grant",
+    "description": "Prof. Mathis was awarded another SNSF Project Grant!",
+    "type": "Research Grant",
+    "funder": {
+      "name": "Swiss National Science Foundation",
+      "logo": "/images/funders/snf_logo.webp",
+      "website": "https://www.snf.ch"
+    }
+  },
+  {
+    "id": "snsf-2022",
+    "period": "2022 - 2026",
+    "title": "SNSF Project Grant",
+    "description": "Prof. Mathis was awarded a SNSF Project Grant!",
+    "type": "Research Grant",
+    "funder": {
+      "name": "Swiss National Science Foundation",
+      "logo": "/images/funders/snf_logo.webp",
+      "website": "https://www.snf.ch"
+    }
+  },
+  {
+    "id": "fellowship-sepideh",
+    "period": "2024 - 2028",
+    "title": "PhD Fellowship - Sepideh Mamooler",
+    "description": "PhD Student Sepideh Mamooler was awarded a PhD Fellowship!",
+    "type": "Fellowship",
+    "funder": {
+      "name": "Boehringer Ingelheim Fonds",
+      "logo": "/images/funders/bif_logo.webp",
+      "website": "https://bifonds.de/"
+    }
+  },
+  {
+    "id": "fellowship-haozhe",
+    "period": "2022 - 2026",
+    "title": "PhD Fellowship - Haozhe Qi",
+    "description": "PhD Student Haozhe Qi was awarded a PhD Fellowship!",
+    "type": "Fellowship",
+    "funder": {
+      "name": "Boehringer Ingelheim Fonds",
+      "logo": "/images/funders/bif_logo.webp",
+      "website": "https://bifonds.de/"
+    }
+  },
+  {
+    "id": "bosselut-collab",
+    "period": "2022 - 2026",
+    "title": "Project Funding with Prof. Bosselut",
+    "description": "Profs. Mathis & Bosselut are awarded project funding!",
+    "type": "Research Grant",
+    "funder": {
+      "name": "EPFL Center for Imaging",
+      "logo": "/images/funders/epfl.webp",
+      "website": "https://imaging.epfl.ch/"
+    }
+  },
+  {
+    "id": "microsoft-2022",
+    "period": "2022 - 2023",
+    "title": "Microsoft Funding",
+    "description": "Prof. Mathis is awarded funding from Microsoft!",
+    "type": "Industry",
+    "funder": {
+      "name": "Microsoft",
+      "logo": "/images/funders/microsoft-ai.webp",
+      "website": "https://www.microsoft.com"
+    }
+  },
+  {
+    "id": "czi-2019",
+    "period": "2019 - 2023",
+    "title": "Chan Zuckerberg Initiative (CZI)",
+    "description": "Prof. Mathis & Prof. M. Mathis co-awarded funding from CZI!",
+    "type": "Foundation",
+    "funder": {
+      "name": "Chan Zuckerberg Initiative",
+      "logo": "/images/funders/images.webp",
+      "website": "https://chanzuckerberg.com"
+    }
+  },
+  {
+    "id": "kavli-2021",
+    "period": "2021 - 2022",
+    "title": "Kavli Foundation",
+    "description": "Prof. Mathis was awarded funding from the Kavli Foundation",
+    "type": "Foundation",
+    "funder": {
+      "name": "Kavli Foundation",
+      "logo": "/images/funders/kavli.webp",
+      "website": "https://www.kavlifoundation.org"
+    }
+  }
+]
