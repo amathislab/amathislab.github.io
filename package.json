@@ -19,7 +19,8 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
-    "validate": "npm run typecheck && npm run lint && npm run format:check && npm run test"
+    "validate": "npm run typecheck && npm run lint && npm run format:check && npm run test",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -56,6 +57,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-tailwindcss": "^3.18.2",
+    "husky": "^9.1.7",
     "jsdom": "^27.0.0",
     "postcss": "^8",
     "prettier": "^3.6.2",
