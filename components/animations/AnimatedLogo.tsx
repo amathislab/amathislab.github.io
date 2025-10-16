@@ -23,7 +23,7 @@ export function AnimatedLogo({ className = "" }: { className?: string }) {
         <img
           src="/clean_logo.svg"
           alt="Mathis Group Logo"
-          className="h-auto w-full"
+          className="h-auto w-full transition-shadow duration-500 dark:brightness-110 dark:drop-shadow-[0_20px_60px_rgba(255,255,255,0.18)]"
         />
       </div>
     </div>

@@ -33,7 +33,9 @@ export function FunderLogo({
     <div
       className={cn(
         "relative flex items-center justify-center overflow-hidden rounded-2xl border border-border/50 bg-gradient-to-br from-muted/30 to-muted/60 shadow-sm transition-all duration-300",
+        "dark:border-white/10 dark:from-white/5 dark:to-white/[0.07]",
         "group-hover:border-border group-hover:shadow-soft group-hover:from-muted/50 group-hover:to-muted/80",
+        "dark:group-hover:border-white/20 dark:group-hover:from-white/10 dark:group-hover:to-white/[0.12]",
         sizeClasses[size],
         containerPadding[size],
         className
@@ -42,8 +44,7 @@ export function FunderLogo({
       <img
         src={logo}
         alt={`${name} logo`}
-        className="size-full object-contain opacity-60 grayscale transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
-        style={{ mixBlendMode: "multiply" }}
+        className="size-full object-contain opacity-70 mix-blend-multiply grayscale transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0 dark:opacity-90 dark:mix-blend-normal dark:grayscale-0"
       />
     </div>
   )
