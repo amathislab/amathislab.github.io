@@ -1,5 +1,7 @@
+import { FunderLogo } from "@/components/funding/FunderLogo"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import fundingData from "@/data/funding.json"
 
 export const metadata = {
   title: "Funding | Mathis Group",
@@ -7,57 +9,6 @@ export const metadata = {
 }
 
 export default function FundingPage() {
-  const grants = [
-    {
-      period: "2024 - 2028",
-      title: "SNSF Project Grant",
-      description: "Prof. Mathis was awarded another SNSF Project Grant!",
-      type: "Research Grant"
-    },
-    {
-      period: "2022 - 2026",
-      title: "SNSF Project Grant",
-      description: "Prof. Mathis was awarded a SNSF Project Grant!",
-      type: "Research Grant"
-    },
-    {
-      period: "2024 - 2028",
-      title: "PhD Fellowship - Sepideh Mamooler",
-      description: "PhD Student Sepideh Mamooler was awarded a PhD Fellowship!",
-      type: "Fellowship"
-    },
-    {
-      period: "2022 - 2026",
-      title: "PhD Fellowship - Haozhe Qi",
-      description: "PhD Student Haozhe Qi was awarded a PhD Fellowship!",
-      type: "Fellowship"
-    },
-    {
-      period: "2022 - 2026",
-      title: "Project Funding with Prof. Bosselut",
-      description: "Profs. Mathis & Bosselut are awarded project funding!",
-      type: "Research Grant"
-    },
-    {
-      period: "2022 - 2023",
-      title: "Microsoft Funding",
-      description: "Prof. Mathis is awarded funding from Microsoft!",
-      type: "Industry"
-    },
-    {
-      period: "2019 - 2023",
-      title: "Chan Zuckerberg Initiative (CZI)",
-      description: "Prof. Mathis & Prof. M. Mathis co-awarded funding from CZI!",
-      type: "Foundation"
-    },
-    {
-      period: "2021 - 2022",
-      title: "Kavli Foundation",
-      description: "Prof. Mathis was awarded funding from the Kavli Foundation",
-      type: "Foundation"
-    }
-  ]
-
   return (
     <div className="flex flex-col">
       {/* Header */}
@@ -78,12 +29,21 @@ export default function FundingPage() {
       <section className="py-16 lg:py-24">
         <div className="section-container max-w-4xl">
           <div className="space-y-6">
-            {grants.map((grant, index) => (
-              <Card key={index} className="transition-all hover:shadow-soft-lg">
+            {fundingData.map((grant) => (
+              <Card key={grant.id} className="group transition-all hover:shadow-soft-lg">
                 <CardHeader>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <div className="mb-2 flex items-center gap-3">
+                  <div className="flex items-start gap-4">
+                    {/* Funder Logo */}
+                    <FunderLogo
+                      name={grant.funder.name}
+                      logo={grant.funder.logo}
+                      website={grant.funder.website}
+                      size="md"
+                    />
+
+                    {/* Grant Content */}
+                    <div className="min-w-0 flex-1">
+                      <div className="mb-2 flex flex-wrap items-center gap-2">
                         <Badge variant="outline">{grant.period}</Badge>
                         <Badge variant="secondary">{grant.type}</Badge>
                       </div>
