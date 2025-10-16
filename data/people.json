@@ -129,6 +129,17 @@
     "status": "current"
   },
   {
+    "id": "pauline-stehli",
+    "name": "Pauline Stehli",
+    "role": "Lab Administration",
+    "degree": "Staff",
+    "avatar": "/images/people/pauline.webp",
+    "project": "",
+    "note": "",
+    "tags": ["lab management"],
+    "status": "current"
+  },
+  {
     "id": "maxim-pavliv",
     "name": "Maxim Pavliv",
     "role": "Software Engineer",
