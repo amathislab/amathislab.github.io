@@ -61,10 +61,14 @@ export default function PositionsPage() {
                 </div>
                 <div className="mt-6">
                   <Button asChild>
-                    <Link href="/contact">
-                      Get in Touch
-                      <ArrowRight className="ml-2 size-4" />
-                    </Link>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLScyKbu2Hfv24i3RClKZsAEnt8Rzo77RQ27w-VIo4fZEFk8QFg/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Express Interest (EPFL Students)
+                      <ExternalLink className="ml-2 size-4" />
+                    </a>
                   </Button>
                 </div>
               </CardContent>

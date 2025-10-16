@@ -1,4 +1,5 @@
 import { Github, Mail } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const footerLinks = {
@@ -47,6 +48,24 @@ export function Footer() {
                 aria-label="Email"
               >
                 <Mail className="size-5" />
+              </a>
+            </div>
+            <div className="mt-6">
+              <a
+                href="https://www.epfl.ch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+                aria-label="Visit EPFL"
+              >
+                <Image
+                  src="/images/footer/epfl_logo.png"
+                  alt="EPFL"
+                  width={150}
+                  height={64}
+                  className="h-10 w-auto"
+                  priority={false}
+                />
               </a>
             </div>
           </div>

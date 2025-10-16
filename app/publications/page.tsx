@@ -7,19 +7,23 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import publicationsData from "@/data/publications.json"
+import { useHeaderOffset } from "@/lib/hooks/useHeaderOffset"
 
 export default function PublicationsPage() {
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
   const [selectedType, setSelectedType] = useState<string | null>(null)
   const filterRef = useRef<HTMLElement | null>(null)
   const [yearStickyOffset, setYearStickyOffset] = useState<number | null>(null)
+  const headerOffset = useHeaderOffset()
 
   useEffect(() => {
+    if (headerOffset === null) {
+      return
+    }
+
     const updateOffset = () => {
-      const header = document.querySelector<HTMLElement>("header")
-      const headerHeight = header?.getBoundingClientRect().height ?? 0
       const filterHeight = filterRef.current?.getBoundingClientRect().height ?? 0
-      const combinedHeight = headerHeight + filterHeight
+      const combinedHeight = headerOffset + filterHeight
 
       setYearStickyOffset(prev => {
         if (prev !== null && Math.abs(prev - combinedHeight) < 0.5) {
@@ -35,10 +39,6 @@ export default function PublicationsPage() {
     let resizeObserver: ResizeObserver | null = null
     if (typeof ResizeObserver !== "undefined") {
       resizeObserver = new ResizeObserver(updateOffset)
-      const header = document.querySelector<HTMLElement>("header")
-      if (header) {
-        resizeObserver.observe(header)
-      }
       if (filterRef.current) {
         resizeObserver.observe(filterRef.current)
       }
@@ -48,7 +48,7 @@ export default function PublicationsPage() {
       window.removeEventListener("resize", updateOffset)
       resizeObserver?.disconnect()
     }
-  }, [])
+  }, [headerOffset])
 
   const years = Array.from(new Set(publicationsData.map(p => p.year))).sort((a, b) => b - a)
   const types = Array.from(new Set(publicationsData.map(p => p.type)))
@@ -68,7 +68,7 @@ export default function PublicationsPage() {
   return (
     <div className="flex flex-col">
       {/* Header */}
-      <section className="bg-muted/30 py-24">
+      <section className="bg-muted/30 pb-12 pt-24 lg:pb-16">
         <div className="section-container">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
@@ -93,7 +93,8 @@ export default function PublicationsPage() {
       {/* Filters */}
       <section
         ref={filterRef}
-        className="sticky top-16 z-10 border-b bg-background py-8"
+        className="sticky top-16 z-10 border-b bg-background py-6 sm:py-8"
+        style={headerOffset !== null ? { top: headerOffset } : undefined}
       >
         <div className="section-container">
           <div className="flex flex-col gap-4">
@@ -158,7 +159,7 @@ export default function PublicationsPage() {
               <div key={year} className="mb-16">
                 <h2
                   className="sticky top-32 mb-8 bg-background py-4 text-3xl font-bold"
-                  style={yearStickyOffset !== null ? { top: `${yearStickyOffset}px` } : undefined}
+                  style={yearStickyOffset !== null ? { top: yearStickyOffset } : undefined}
                 >
                   {year}
                 </h2>
