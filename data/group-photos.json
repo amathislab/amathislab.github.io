@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lab-retreat-2025",
+    "title": "Lab Retreat 2025",
+    "date": "2025-03",
+    "location": "Swiss Alps",
+    "image": "/images/group/retreat.webp",
+    "description": "Joint lab retreat with Mackenzie’s team"
+  },
+  {
+    "id": "conference-neurips-2023",
+    "title": "Mini golf",
+    "date": "2023-05",
+    "location": "Geneva",
+    "image": "/images/group/2023.webp",
+    "description": "Minigolf outing in 2023"
+  }
+]

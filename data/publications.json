@@ -1,0 +1,260 @@
+[
+  {
+    "id": "arnold-2025",
+    "title": "Arnold: a generalist muscle transformer policy",
+    "image": "/images/research/arnold.jpg",
+    "authors": ["AS Chiappa", "B An", "M Simos", "C Li", "A Mathis"],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "type": "preprint",
+    "tags": ["sensorimotor control", "robotics", "reinforcement learning"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2508.18066"
+    },
+    "featured": true
+  },
+  {
+    "id": "llavaction-2025",
+    "title": "LLaVAction: evaluating and training multi-modal large language models for action recognition",
+    "image": "/images/publications/llavaction.png",
+    "authors": ["S Ye*", "H Qi*", "A Mathis**", "MW Mathis**"],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "type": "preprint",
+    "tags": ["action recognition", "multimodal learning", "LLMs"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2503.18712"
+    },
+    "featured": true
+  },
+  {
+    "id": "motion-imitation-2025",
+    "title": "Reinforcement learning-based motion imitation for physiologically plausible musculoskeletal motor control",
+    "authors": ["M Simos", "AS Chiappa", "A Mathis"],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "type": "preprint",
+    "tags": ["reinforcement learning", "motor control", "biomechanics"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2503.14637"
+    },
+    "featured": true
+  },
+  {
+    "id": "dlc2action-2025",
+    "title": "DLC2Action: A Deep Learning-based Toolbox for Automated Behavior Segmentation",
+    "authors": ["E Kozlova", "A Bonnetto", "A Mathis"],
+    "year": 2025,
+    "venue": "bioRxiv",
+    "type": "preprint",
+    "tags": ["behavior analysis", "deep learning", "neuroscience"],
+    "links": {
+      "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.09.27.678941",
+      "github": "https://github.com/amathislab/DLC2action"
+    },
+    "featured": true
+  },
+  {
+    "id": "smart-kitchen-2025",
+    "title": "EPFL-Smart-Kitchen-30: Densely annotated cooking dataset with 3D kinematics to challenge video and language models",
+    "authors": ["A Bonnetto*", "H Qi*", "F Leong", "M Tashkovska", "M Rad", "S Shokur", "F Hummel", "S Micera", "M Pollefeys", "A Mathis"],
+    "year": 2025,
+    "venue": "NeurIPS (in press)",
+    "type": "conference",
+    "tags": ["datasets", "3D kinematics", "multimodal learning"],
+    "featured": true
+  },
+  {
+    "id": "mammalps-2024",
+    "title": "MammAlps: A multi-view video behavior monitoring dataset of wild mammals in the Swiss Alps",
+    "authors": ["V Gabeff", "H Qi", "B Flaherty", "G Sumbül", "A Mathis*", "D Tuia*"],
+    "year": 2024,
+    "venue": "CVPR (highlight)",
+    "type": "conference",
+    "tags": ["wildlife conservation", "datasets", "computer vision"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2404.xxxxx"
+    },
+    "featured": true
+  },
+  {
+    "id": "decoding-brain-2024",
+    "title": "Decoding the brain: From neural representations to mechanistic models",
+    "authors": ["MW Mathis", "AP Rotondo", "EF Chang", "AS Tolias", "A Mathis"],
+    "year": 2024,
+    "venue": "Cell",
+    "volume": "187 (21)",
+    "pages": "5814-5832",
+    "type": "journal",
+    "tags": ["neuroscience", "neural decoding", "mechanistic models"],
+    "featured": true
+  },
+  {
+    "id": "curriculum-rl-2024",
+    "title": "Acquiring musculoskeletal skills with curriculum-based reinforcement learning",
+    "authors": ["AS Chiappa", "P Tano", "N Patel", "A Ingster", "A Pouget", "A Mathis"],
+    "year": 2024,
+    "venue": "Neuron",
+    "type": "journal",
+    "tags": ["reinforcement learning", "motor control", "curriculum learning"],
+    "featured": true
+  },
+  {
+    "id": "behave-mae-2024",
+    "title": "Elucidating the Hierarchical Nature of Behavior with Masked Autoencoders",
+    "authors": ["L Stoffl", "A Bonnetto", "S d'Ascoli", "A Mathis"],
+    "year": 2024,
+    "venue": "European Conference on Computer Vision",
+    "type": "conference",
+    "tags": ["behavior analysis", "self-supervised learning", "ECCV"],
+    "links": {
+      "github": "https://github.com/amathislab/BehaveMAE"
+    },
+    "featured": true
+  },
+  {
+    "id": "proprioception-2024",
+    "title": "Task-driven neural network models predict neural dynamics of proprioception",
+    "authors": ["A Marin Vargas*", "A Bisi*", "AS Chiappa", "C Versteeg", "LE Miller", "A Mathis"],
+    "year": 2024,
+    "venue": "Cell",
+    "type": "journal",
+    "tags": ["proprioception", "neural networks", "sensorimotor control"],
+    "featured": true
+  },
+  {
+    "id": "superanimal-2024",
+    "title": "SuperAnimal models pretrained for plug-and-play analysis of animal behavior",
+    "authors": ["S Ye", "A Filippova", "J Lauer", "M Vidal", "St Schneider", "T Qiu", "A Mathis", "MW Mathis"],
+    "year": 2024,
+    "venue": "Nature Communications",
+    "type": "journal",
+    "tags": ["pose estimation", "transfer learning", "animal behavior"],
+    "links": {
+      "github": "https://github.com/DeepLabCut/DeepLabCut"
+    },
+    "featured": true
+  },
+  {
+    "id": "wildclip-2024",
+    "title": "WildCLIP: Scene and animal attribute retrieval from camera trap data with domain-adapted vision-language models",
+    "authors": ["V Gabeff", "M Russwurm", "D Tuia", "A Mathis"],
+    "year": 2024,
+    "venue": "International Journal of Computer Vision (in press)",
+    "type": "journal",
+    "tags": ["wildlife conservation", "vision-language models", "CLIP"],
+    "links": {
+      "github": "https://github.com/amathislab/wildclip"
+    },
+    "featured": true
+  },
+  {
+    "id": "rethinking-pose-2023",
+    "title": "Rethinking pose estimation in crowds: overcoming the detection information-bottleneck and ambiguity",
+    "authors": ["M Zhou*", "L Stoffl*", "MW Mathis", "A Mathis"],
+    "year": 2023,
+    "venue": "ICCV",
+    "type": "conference",
+    "tags": ["pose estimation", "crowded scenes", "computer vision"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2306.07879"
+    }
+  },
+  {
+    "id": "amadeusgpt-2023",
+    "title": "AmadeusGPT: a natural language interface for interactive animal behavioral analysis",
+    "authors": ["S Ye", "J Lauer", "M Zhou", "A Mathis", "MW Mathis"],
+    "year": 2023,
+    "venue": "NeurIPS",
+    "type": "conference",
+    "tags": ["NLP", "behavior analysis", "GPT"],
+    "links": {
+      "github": "https://github.com/AdaptiveMotorControlLab/AmadeusGPT"
+    }
+  },
+  {
+    "id": "proprioception-elife-2023",
+    "title": "Contrasting action and posture coding with hierarchical deep neural network models of proprioception",
+    "authors": ["Kai J. Sandbrink*", "Pranav Mamidanna*", "Claudio Michaelis", "Matthias Bethge*", "Mackenzie W. Mathis*", "Alexander Mathis*"],
+    "year": 2023,
+    "venue": "eLife",
+    "type": "journal",
+    "tags": ["proprioception", "neural networks", "sensorimotor control"]
+  },
+  {
+    "id": "dmap-2022",
+    "title": "DMAP: a Distributed Morphological Attention Policy for Learning to Locomote with a Changing Body",
+    "authors": ["Alberto Silvio Chiappa", "Alessandro Marin Vargas", "Alexander Mathis"],
+    "year": 2022,
+    "venue": "NeurIPS",
+    "type": "conference",
+    "tags": ["reinforcement learning", "locomotion", "morphology"],
+    "links": {
+      "github": "https://github.com/amathislab/dmap"
+    }
+  },
+  {
+    "id": "multi-animal-dlc-2022",
+    "title": "Multi-animal pose estimation, identification and tracking with DeepLabCut",
+    "authors": ["Jessy Lauer", "Mu Zhou", "Shaokai Ye", "et al.", "Mackenzie W Mathis*", "Alexander Mathis*"],
+    "year": 2022,
+    "venue": "Nature Neuroscience",
+    "type": "journal",
+    "tags": ["pose estimation", "tracking", "DeepLabCut"],
+    "links": {
+      "github": "https://github.com/DeepLabCut/DeepLabCut"
+    },
+    "featured": true
+  },
+  {
+    "id": "seeing-biodiversity-2021",
+    "title": "Seeing biodiversity: perspectives in machine learning for wildlife conservation",
+    "authors": ["Devis Tuia", "Benjamin Kellenberger", "Sara Beery", "et al.", "Alexander Mathis", "Mackenzie W Mathis", "et al."],
+    "year": 2021,
+    "venue": "Nature Communications",
+    "type": "journal",
+    "tags": ["wildlife conservation", "machine learning", "computer vision"]
+  },
+  {
+    "id": "dlc-primer-2020",
+    "title": "A Primer on Motion Capture with Deep Learning: Principles, Pitfalls and Perspectives",
+    "authors": ["Alexander Mathis", "Steffen Schneider", "Jessy Lauer", "Mackenzie W. Mathis"],
+    "year": 2020,
+    "venue": "Neuron",
+    "volume": "108",
+    "issue": "1",
+    "pages": "P44-65",
+    "type": "journal",
+    "tags": ["deep learning", "motion capture", "pose estimation"],
+    "featured": true
+  },
+  {
+    "id": "dlc-protocol-2019",
+    "title": "Using DeepLabCut for 3D markerless pose estimation across species and behaviors",
+    "authors": ["Tanmay Nath*", "Alexander Mathis*", "An Chi Chen", "Amir Patel", "Matthias Bethge", "Mackenzie W. Mathis"],
+    "year": 2019,
+    "venue": "Nature Protocols",
+    "volume": "14",
+    "pages": "2152-2176",
+    "type": "journal",
+    "tags": ["pose estimation", "DeepLabCut", "3D tracking"],
+    "links": {
+      "github": "https://github.com/DeepLabCut/DeepLabCut"
+    }
+  },
+  {
+    "id": "deeplabcut-2018",
+    "title": "DeepLabCut: Markerless tracking of user-defined features with deep learning",
+    "authors": ["Alexander Mathis", "Pranav Mamidanna", "Kevin M. Cury", "Taiga Abe", "Venkatesh N. Murthy", "Mackenzie W. Mathis*", "Matthias Bethge*"],
+    "year": 2018,
+    "venue": "Nature Neuroscience",
+    "volume": "21",
+    "pages": "1281-1289",
+    "type": "journal",
+    "tags": ["pose estimation", "DeepLabCut", "markerless tracking"],
+    "links": {
+      "github": "https://github.com/DeepLabCut/DeepLabCut"
+    },
+    "featured": true
+  }
+]

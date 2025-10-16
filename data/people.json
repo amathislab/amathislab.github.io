@@ -1,0 +1,219 @@
+[
+  {
+    "id": "alexander-mathis",
+    "name": "Alexander Mathis",
+    "role": "Principal Investigator",
+    "title": "Assistant Professor",
+    "avatar": "/images/people/alexander-mathis.jpg",
+    "bio": "Alexander Mathis is an Assistant Professor at EPFL. He holds a Diplom in Mathematics and a PhD from Ludwig-Maximilians-University Munich (with Prof. Andreas Herz). He was a postdoc with Prof. Venkatesh N. Murthy at Harvard University and Prof. Matthias Bethge at Tuebingen AI.",
+    "email": "alexander.mathis@epfl.ch",
+    "links": {
+      "scholar": "https://scholar.google.com",
+      "github": "https://github.com/AlexEMG",
+      "website": "https://people.epfl.ch/alexander.mathis"
+    },
+    "tags": ["computational neuroscience", "machine learning", "motor control"],
+    "status": "current"
+  },
+  {
+    "id": "haozhe-qi",
+    "name": "Haozhe Qi",
+    "role": "PhD Student",
+    "avatar": "/images/people/haozhe-qi.jpg",
+    "project": "3D pose estimation & modeling humans",
+    "links": {
+      "website": "https://people.epfl.ch/haozhe.qi"
+    },
+    "tags": ["computer vision", "pose estimation"],
+    "status": "current"
+  },
+  {
+    "id": "valentin-gabeff",
+    "name": "Valentin Gabeff",
+    "role": "PhD Student",
+    "avatar": "/images/people/valentin.jpeg",
+    "project": "WildAI",
+    "cosupervised": "Prof. Devis Tuia",
+    "links": {
+      "website": "https://people.epfl.ch/valentin.gabeff"
+    },
+    "tags": ["wildlife conservation", "computer vision"],
+    "status": "current"
+  },
+  {
+    "id": "sepideh-mamooler",
+    "name": "Sepideh Mamooler",
+    "role": "PhD Student",
+    "avatar": "/images/people/sepideh-mamooler.jpg",
+    "project": "Behavior understanding with NLP",
+    "cosupervised": "Prof. Antoine Bosselut",
+    "links": {
+      "website": "https://people.epfl.ch/sepideh.mamooler"
+    },
+    "tags": ["NLP", "behavior analysis"],
+    "status": "current"
+  },
+  {
+    "id": "andy-bonnetto",
+    "name": "Andy Bonnetto",
+    "role": "PhD Student",
+    "avatar": "/images/people/andy-bonnetto.jpg",
+    "project": "Measuring naturalistic human behavior and linking it to brain function",
+    "links": {
+      "website": "https://people.epfl.ch/andy.bonnetto"
+    },
+    "tags": ["behavior analysis", "neuroscience"],
+    "status": "current"
+  },
+  {
+    "id": "merkourios-simos",
+    "name": "Merkourios Simos",
+    "role": "PhD Student",
+    "avatar": "/images/people/merkourios-thodoris.jpg",
+    "project": "Proprioception, sensorimotor control and learning",
+    "links": {
+      "website": "https://people.epfl.ch/merkourios.simos"
+    },
+    "tags": ["proprioception", "sensorimotor control"],
+    "status": "current"
+  },
+  {
+    "id": "chengkun-li",
+    "name": "Chengkun Li",
+    "role": "PhD Student",
+    "avatar": "/images/people/chengkun-li.jpeg",
+    "project": "Reinforcement learning",
+    "links": {
+      "github": "https://github.com/CharlieLeee",
+      "website": "https://charlieleee.github.io"
+    },
+    "tags": ["reinforcement learning", "machine learning"],
+    "status": "current"
+  },
+  {
+    "id": "bianca-ziliotto",
+    "name": "Bianca Ziliotto",
+    "role": "PhD Student",
+    "avatar": "/images/people/bianca-carioni.jpg",
+    "project": "Proprioception and sensorimotor control",
+    "links": {
+      "website": "https://people.epfl.ch/bianca.ziliotto"
+    },
+    "tags": ["proprioception", "sensorimotor control"],
+    "status": "current"
+  },
+  {
+    "id": "matea-tashkovska",
+    "name": "Matea Tashkovska",
+    "role": "PhD Student",
+    "avatar": "/images/people/matea-tashkovska.jpg",
+    "project": "Quantifying behavior",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?user=yvsYKg0AAAAJ&hl=en",
+      "website": "https://people.epfl.ch/matea.tashkovska"
+    },
+    "tags": ["behavior analysis"],
+    "status": "current"
+  },
+  {
+    "id": "maxim-pavliv",
+    "name": "Maxim Pavliv",
+    "role": "Software Engineer",
+    "avatar": "/images/people/max-beddies.jpg",
+    "project": "All things software, including DeepLabCut",
+    "note": "Also works in M.W. Mathis lab",
+    "tags": ["software engineering", "DeepLabCut"],
+    "status": "alumni"
+  },
+  {
+    "id": "lucas-stoffl",
+    "name": "Lucas Stoffl",
+    "role": "Alumni",
+    "degree": "PhD",
+    "avatar": "/images/people/lucas-stoffl.jpg",
+    "project": "Behavioral analysis",
+    "graduationYear": 2025,
+    "graduationSeason": "Spring",
+    "currentPosition": "Postdoctoral Fellow at Cornell Weill",
+    "links": {
+      "website": "https://people.epfl.ch/lucas.stoffl"
+    },
+    "tags": ["behavior analysis", "computer vision"],
+    "status": "alumni"
+  },
+  {
+    "id": "alessandro-marin-vargas",
+    "name": "Alessandro Marin Vargas",
+    "role": "Alumni",
+    "degree": "PhD",
+    "avatar": "/images/people/alessandro-marin-vargas.jpg",
+    "project": "Modeling the sensorimotor pathway",
+    "graduationYear": 2025,
+    "graduationSeason": "Spring",
+    "currentPosition": "Postdoctoral Fellow at Stanford",
+    "links": {
+      "website": "https://people.epfl.ch/alessandro.marinvargas"
+    },
+    "tags": ["sensorimotor control", "modeling"],
+    "status": "alumni"
+  },
+  {
+    "id": "alberto-chiappa",
+    "name": "Alberto Chiappa",
+    "role": "Alumni",
+    "degree": "PhD",
+    "avatar": "/images/people/alberto-silvio-chiappa.jpg",
+    "project": "Reinforcement learning for motor control",
+    "graduationYear": 2025,
+    "graduationSeason": "Spring",
+    "currentPosition": "Flexion Robotics",
+    "links": {
+      "website": "https://people.epfl.ch/alberto.chiappa"
+    },
+    "tags": ["reinforcement learning", "motor control"],
+    "status": "alumni"
+  },
+  {
+    "id": "mu-zhou",
+    "name": "Mu Zhou",
+    "role": "Alumni",
+    "degree": "PhD",
+    "avatar": "/images/people/mu-qiao.jpg",
+    "project": "Pose estimation and ReID",
+    "graduationYear": 2025,
+    "graduationSeason": "Fall",
+    "currentPosition": "Zoo Zurich",
+    "links": {
+      "website": "https://people.epfl.ch/mu.zhou"
+    },
+    "tags": ["pose estimation", "ReID"],
+    "status": "alumni"
+  },
+  {
+    "id": "adriana-perez-rotondo",
+    "name": "Adriana Perez Rotondo",
+    "role": "Alumni",
+    "degree": "Postdoc",
+    "avatar": "/images/people/adriana-mendez-leal.jpeg",
+    "project": "Modeling and theory for sensorimotor circuits",
+    "links": {
+      "scholar": "https://scholar.google.com/citations?hl=en&user=buPwZfgAAAAJ"
+    },
+    "tags": ["modeling", "sensorimotor circuits"],
+    "status": "alumni"
+  },
+  {
+    "id": "niels-poulsen",
+    "name": "Niels Poulsen",
+    "role": "Alumni",
+    "degree": "Staff",
+    "avatar": "/images/people/niels-claessens.jpeg",
+    "project": "All things software",
+    "note": "Also worked in M.W. Mathis lab",
+    "links": {
+      "website": "https://people.epfl.ch/niels.poulsen"
+    },
+    "tags": ["software engineering"],
+    "status": "alumni"
+  }
+]

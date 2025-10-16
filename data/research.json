@@ -1,0 +1,95 @@
+[
+  {
+    "id": "ml-tools-behavior",
+    "title": "Machine Learning for Behavior Analysis",
+    "slug": "ml-tools-behavior",
+    "description": "We strive to develop tools for the analysis of animal behavior. Behavior is a complex reflection of an animal's goals, state and character. Thus, accurately measuring behavior is crucial for advancing basic neuroscience, as well as the study of various neural and psychiatric disorders. However, measuring behavior (from video) is also a challenging computer vision and machine learning problem.",
+    "extended": "We are also passionate about wildlife conservation and are thrilled that our tools can contribute beyond Neuroscience. Our work advances machine learning and computer vision to push the state of the art for the analysis of behavior.",
+    "tools": [
+      {
+        "name": "DeepLabCut",
+        "description": "Markerless pose estimation for animals",
+        "github": "https://github.com/DeepLabCut/DeepLabCut"
+      },
+      {
+        "name": "DLC2action",
+        "description": "Behavior segmentation from pose data",
+        "github": "https://github.com/amathislab/DLC2action"
+      },
+      {
+        "name": "AmadeusGPT",
+        "description": "Natural language interface for behavior analysis",
+        "github": "https://github.com/AdaptiveMotorControlLab/AmadeusGPT"
+      },
+      {
+        "name": "BehaveMAE",
+        "description": "Masked autoencoders for hierarchical behavior",
+        "github": "https://github.com/amathislab/BehaveMAE"
+      },
+      {
+        "name": "WildCLIP",
+        "description": "Vision-language models for wildlife",
+        "github": "https://github.com/amathislab/wildclip"
+      }
+    ],
+    "image": [
+      "/images/research/horse.gif",
+      "/images/research/mouse.gif",
+      "/images/research/fly.gif"
+    ],
+    "featured": true
+  },
+  {
+    "id": "brain-inspired-motor",
+    "title": "Brain-inspired Motor Skill Learning",
+    "slug": "brain-inspired-motor",
+    "description": "Watching any expert athlete, it is apparent that brains have mastered to elegantly control our bodies. This is an astonishing feat, especially considering the inherent challenges of slow hardware and the sensory and motor latencies that impede control. Understanding how the brain achieves skilled behavior is one of the core questions of neuroscience that we tackle through Modeling using Reinforcement Learning, and Control Theory.",
+    "extended": "",
+    "tools": [
+      {
+        "name": "DMAP",
+        "description": "Distributed morphological attention for locomotion",
+        "github": "https://github.com/amathislab/dmap"
+      },
+      {
+        "name": "Lattice",
+        "description": "Efficient exploration for motor control",
+        "arxiv": "https://arxiv.org/abs/2305.20065v1"
+      },
+      {
+        "name": "MyoChallenge 2022",
+        "description": "Winning solution (NeurIPS 2022)",
+        "github": "https://github.com/amathislab/myochallenge"
+      },
+      {
+        "name": "MyoChallenge 2023",
+        "description": "Winning solution (NeurIPS 2023)",
+        "github": "https://github.com/amathislab/myochallenge-lattice"
+      }
+    ],
+    "image": [
+      "/images/research/arnold.jpg",
+      "/images/research/lattice.jpg"
+    ],
+    "featured": true
+  },
+  {
+    "id": "proprioception",
+    "title": "Task-driven Models of Proprioception",
+    "slug": "proprioception",
+    "description": "We develop normative theories and models for sensorimotor transformations and learning. Work in the past decade has demonstrated that networks trained on object-recognition tasks provide excellent models for the visual system. Yet, for sensorimotor circuits this fruitful approach is less explored, perhaps due to the lack of datasets like ImageNet.",
+    "extended": "",
+    "tools": [
+      {
+        "name": "proprioceptive illusion",
+        "description": "Deep-learning models of the ascending proprioceptive pathway are subject to illusions",
+        "github": "https://github.com/amathislab/ProprioceptiveIllusions"
+      }
+    ],
+    "image": [
+      "/images/research/illusion.png",
+      "/images/research/illusion-2.jpg"
+    ],
+    "featured": true
+  }
+]
