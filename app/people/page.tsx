@@ -44,7 +44,7 @@ export default function PeoplePage() {
               <CardHeader>
                 <div className="flex flex-col items-start gap-6 sm:flex-row">
                   {pi.avatar && (
-                    <div className="size-32 shrink-0 overflow-hidden rounded-2xl ring-2 ring-border">
+                    <div className="size-28 shrink-0 overflow-hidden rounded-2xl ring-2 ring-border">
                       <img
                         src={pi.avatar}
                         alt={pi.name}
@@ -111,7 +111,7 @@ export default function PeoplePage() {
                 <CardHeader>
                   <div className="mb-3 flex items-start gap-4">
                     {person.avatar && (
-                      <div className="relative size-20 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                      <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
                         <img
                           src={person.avatar}
                           alt={person.name}
@@ -178,7 +178,7 @@ export default function PeoplePage() {
                   <CardHeader>
                     <div className="mb-3 flex items-start gap-4">
                       {person.avatar && (
-                        <div className="relative size-20 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
                           <img
                             src={person.avatar}
                             alt={person.name}
@@ -244,7 +244,7 @@ export default function PeoplePage() {
                   <CardHeader>
                     <div className="mb-3 flex items-start gap-4">
                       {person.avatar && (
-                        <div className="relative size-20 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
                           <img
                             src={person.avatar}
                             alt={person.name}

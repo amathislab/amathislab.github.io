@@ -26,6 +26,28 @@ npx serve out
 
 The site will be available at [http://localhost:3000](http://localhost:3000).
 
+### Development Best Practices
+
+Before committing changes, always run:
+
+```bash
+# Check code quality and style
+npm run lint
+
+# Run tests to ensure functionality
+npm test
+
+# Fix auto-fixable linting issues
+npm run lint -- --fix
+```
+
+These checks ensure:
+
+- Code follows consistent style guidelines
+- No TypeScript errors in production build
+- All components render correctly
+- Accessibility standards are maintained
+
 
 ## Content Management
 

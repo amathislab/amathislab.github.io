@@ -248,14 +248,14 @@ export default function Home() {
               in behavioral analysis and modeling sensorimotor learning. We also regularly recruit
               postdoctoral fellows.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button asChild size="lg">
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+              <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link href="/positions">
                   View Open Positions
                   <ArrowRight className="ml-2 size-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
                 <Link href="/people">Meet the Team</Link>
               </Button>
             </div>

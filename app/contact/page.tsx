@@ -107,46 +107,7 @@ export default function ContactPage() {
             </p>
             <div className="space-y-2 text-sm">
               <p>
-                <span className="font-medium">For PhD positions:</span> Apply to the{" "}
-                <a
-                  href="https://www.epfl.ch/education/phd/edne-neuroscience/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Doctoral Program in Neuroscience
-                </a>{" "}
-                or{" "}
-                <a
-                  href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Doctoral Program in Computer and Communication Sciences
-                </a>{" "}
-                at EPFL.
-              </p>
-              <p>
-                <span className="font-medium">For postdoctoral positions:</span> Contact Alexander
-                directly with your research interests and CV. Consider applying for{" "}
-                <a
-                  href="http://www.snf.ch/en/funding/careers/postdoc-mobility/Pages/default.aspx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  SNSF Swiss Postdoctoral Fellowship
-                </a>{" "}
-                or{" "}
-                <a
-                  href="https://www.epfl.ch/research/domains/aicenter/education/postdoctoral-fellowship/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  EPFL AI Center Postdoctoral Fellowship
-                </a>.
+                <span className="font-medium">Check out </span> our <a href="/positions" className="text-primary hover:underline">Open Positions</a>.
               </p>
             </div>
           </div>
