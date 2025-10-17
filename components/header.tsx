@@ -16,7 +16,6 @@ const navigation = [
   { name: "Research", href: "/research" },
   { name: "People", href: "/people" },
   { name: "Publications", href: "/publications" },
-  { name: "Funding", href: "/funding" },
   { name: "Awards", href: "/awards" },
   { name: "Open Positions", href: "/positions" },
   { name: "Contact", href: "/contact" },

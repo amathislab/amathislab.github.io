@@ -1,7 +1,8 @@
-import { ArrowRight, Brain, Code2, Telescope, FileText, Globe, Code } from "lucide-react"
+import { ArrowRight, Brain, Code, Code2, FileText, Globe, Telescope } from "lucide-react"
 import Link from "next/link"
 
 import { AnimatedLogo } from "@/components/animations/AnimatedLogo"
+import { FunderSection } from "@/components/funding/FunderSection"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -280,6 +281,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Funders Section */}
+      <FunderSection />
     </div>
   )
 }

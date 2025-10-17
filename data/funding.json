@@ -1,5 +1,17 @@
 [
   {
+    "id": "scene-2025",
+    "period": "2025 - 2035",
+    "title": "Simons Collaboration on Ecological Neuroscience",
+    "description": "Prof. Mathis was awarded as part of Simons Collaboration on Ecological Neuroscience!",
+    "type": "Foundation",
+    "funder": {
+      "name": "Simons Collaboration on Ecological Neuroscience",
+      "logo": "/images/funders/simons.png",
+      "website": "https://www.simonsfoundation.org/"
+    }
+  },
+  {
     "id": "snsf-2024",
     "period": "2024 - 2028",
     "title": "SNSF Project Grant",
