@@ -32,23 +32,28 @@ export default function FundingPage() {
             {fundingData.map((grant) => (
               <Card key={grant.id} className="group transition-all hover:shadow-soft-lg">
                 <CardHeader>
-                  <div className="flex items-start gap-4">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
                     {/* Funder Logo */}
-                    <FunderLogo
-                      name={grant.funder.name}
-                      logo={grant.funder.logo}
-                      website={grant.funder.website}
-                      size="md"
-                    />
+                    <div className="flex w-full justify-center sm:w-auto sm:justify-start">
+                      <div className="w-full max-w-xs sm:w-auto">
+                        <FunderLogo
+                          name={grant.funder.name}
+                          logo={grant.funder.logo}
+                          website={grant.funder.website}
+                          size="md"
+                          grayscale={false}
+                        />
+                      </div>
+                    </div>
 
                     {/* Grant Content */}
-                    <div className="min-w-0 flex-1">
+                    <div className="min-w-0 flex-1 overflow-hidden">
                       <div className="mb-2 flex flex-wrap items-center gap-2">
                         <Badge variant="outline">{grant.period}</Badge>
                         <Badge variant="secondary">{grant.type}</Badge>
                       </div>
-                      <CardTitle className="text-xl">{grant.title}</CardTitle>
-                      <CardDescription className="mt-2">{grant.description}</CardDescription>
+                      <CardTitle className="break-words text-xl">{grant.title}</CardTitle>
+                      <CardDescription className="mt-2 break-words">{grant.description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
