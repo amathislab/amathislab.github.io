@@ -8,12 +8,13 @@ interface FunderLogoProps {
   website?: string
   size?: "sm" | "md" | "lg"
   className?: string
+  grayscale?: boolean
 }
 
 const sizeClasses = {
   sm: "w-36 h-20",
-  md: "w-48 h-28 lg:w-56 lg:h-32",
-  lg: "w-64 h-36 lg:w-72 lg:h-40",
+  md: "w-full h-40 sm:w-56 sm:h-40",
+  lg: "w-full h-48 sm:w-72 sm:h-48",
 }
 
 const containerPadding = {
@@ -28,6 +29,7 @@ export function FunderLogo({
   website,
   size = "md",
   className,
+  grayscale = true,
 }: FunderLogoProps) {
   const logoElement = (
     <div
@@ -44,7 +46,12 @@ export function FunderLogo({
       <img
         src={logo}
         alt={`${name} logo`}
-        className="size-full object-contain opacity-70 mix-blend-multiply grayscale transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0 dark:opacity-90 dark:mix-blend-normal dark:grayscale-0"
+        className={cn(
+          "size-full object-contain transition-all duration-500 ease-out group-hover:scale-105",
+          grayscale
+            ? "opacity-70 mix-blend-multiply grayscale group-hover:opacity-100 group-hover:grayscale-0 dark:opacity-90 dark:mix-blend-normal dark:grayscale-0"
+            : "opacity-90 group-hover:opacity-100 dark:opacity-100"
+        )}
       />
     </div>
   )
