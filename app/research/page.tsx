@@ -1,5 +1,9 @@
-import { ExternalLink, Github, FileText, Globe } from "lucide-react"
+"use client"
 
+import { ExternalLink, FileText, Github, Globe } from "lucide-react"
+import { useState } from "react"
+
+import { ImageLightbox } from "@/components/ImageLightbox"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -8,15 +12,6 @@ import researchData from "@/data/research.json"
 import { CopyLinkButton } from "./CopyLinkButton"
 import { ReadMoreSection } from "./ReadMoreSection"
 import { StickyLocalNav } from "./StickyLocalNav"
-
-export const metadata = {
-  title: "Research | Mathis Group",
-  description: "Our research directions in computational neuroscience and machine learning.",
-  openGraph: {
-    title: "Research | Mathis Group",
-    description: "We develop machine learning tools for behavioral and neural data analysis, and learn from the brain to solve challenging ML problems.",
-  },
-}
 
 // Type-safe interfaces for research data
 interface Tool {
@@ -39,8 +34,16 @@ interface ResearchArea {
   image?: string | string[]
 }
 
-// Media mosaic with lazy loading
+// Media mosaic with lazy loading and lightbox
 function MediaMosaic({ images, title }: { images: string[]; title: string }) {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index)
+    setLightboxOpen(true)
+  }
+
   if (images.length === 0) {
     return (
       <div className="flex aspect-video items-center justify-center rounded-xl border border-dashed bg-muted/30">
@@ -51,16 +54,33 @@ function MediaMosaic({ images, title }: { images: string[]; title: string }) {
 
   if (images.length === 1) {
     return (
-      <figure className="overflow-hidden rounded-xl bg-white ring-1 ring-border/50 dark:bg-white/95">
-        <img
-          src={images[0]}
-          alt={title}
-          loading="lazy"
-          decoding="async"
-          className="h-auto w-full transition-transform duration-200 hover:scale-[1.01]"
+      <>
+        <figure className="overflow-hidden rounded-xl bg-white ring-1 ring-border/50 dark:bg-white/95">
+          <button
+            type="button"
+            onClick={() => openLightbox(0)}
+            className="w-full cursor-zoom-in transition-transform duration-200 hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            aria-label={`View full size: ${title}`}
+          >
+            <img
+              src={images[0]}
+              alt={title}
+              loading="lazy"
+              decoding="async"
+              className="h-auto w-full"
+            />
+          </button>
+          <figcaption className="sr-only">{title}</figcaption>
+        </figure>
+        <ImageLightbox
+          images={images}
+          currentIndex={currentImageIndex}
+          isOpen={lightboxOpen}
+          onClose={() => setLightboxOpen(false)}
+          onNavigate={setCurrentImageIndex}
+          title={title}
         />
-        <figcaption className="sr-only">{title}</figcaption>
-      </figure>
+      </>
     )
   }
 
@@ -72,25 +92,42 @@ function MediaMosaic({ images, title }: { images: string[]; title: string }) {
         : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
 
   return (
-    <div className={`grid gap-3 ${gridClass}`}>
-      {images.map((img, idx) => (
-        <figure
-          key={idx}
-          className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-white ring-1 ring-border/50 transition-all duration-200 hover:scale-[1.01] hover:shadow-lg dark:bg-white/95"
-        >
-          <img
-            src={img}
-            alt={`${title} - Figure ${idx + 1}`}
-            loading="lazy"
-            decoding="async"
-            className="size-full object-cover"
-          />
-          <figcaption className="sr-only">
-            {title} - Figure {idx + 1}
-          </figcaption>
-        </figure>
-      ))}
-    </div>
+    <>
+      <div className={`grid gap-3 ${gridClass}`}>
+        {images.map((img, idx) => (
+          <figure
+            key={idx}
+            className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-white ring-1 ring-border/50 dark:bg-white/95"
+          >
+            <button
+              type="button"
+              onClick={() => openLightbox(idx)}
+              className="size-full cursor-zoom-in transition-all duration-200 hover:scale-[1.01] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              aria-label={`View full size: ${title} - Figure ${idx + 1}`}
+            >
+              <img
+                src={img}
+                alt={`${title} - Figure ${idx + 1}`}
+                loading="lazy"
+                decoding="async"
+                className="size-full object-cover"
+              />
+            </button>
+            <figcaption className="sr-only">
+              {title} - Figure {idx + 1}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <ImageLightbox
+        images={images}
+        currentIndex={currentImageIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={setCurrentImageIndex}
+        title={title}
+      />
+    </>
   )
 }
 
