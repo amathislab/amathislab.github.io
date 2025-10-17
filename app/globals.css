@@ -24,6 +24,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --radius: 1rem;
+    scrollbar-gutter: stable;
   }
 
   .dark {

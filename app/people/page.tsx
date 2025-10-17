@@ -1,16 +1,18 @@
-import { Mail, ExternalLink, GraduationCap, Calendar, MapPin } from "lucide-react"
+"use client"
 
+import { Calendar, ExternalLink, GraduationCap, Mail, MapPin } from "lucide-react"
+import { useState } from "react"
+
+import { ImageLightbox } from "@/components/ImageLightbox"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import groupPhotos from "@/data/group-photos.json"
 import peopleData from "@/data/people.json"
 
-export const metadata = {
-  title: "People | Mathis Group",
-  description: "Meet the team behind our computational neuroscience and machine learning research.",
-}
-
 export default function PeoplePage() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
   const currentMembers = peopleData.filter(p => p.status === "current")
   const alumni = peopleData.filter(p => p.status === "alumni")
 
@@ -18,6 +20,14 @@ export default function PeoplePage() {
   const phd = currentMembers.filter(p => p.role === "PhD Student")
   const staff = currentMembers.filter(p => p.role === "Research Staff" || p.role === "Software Engineer")
   const admin = currentMembers.filter(p => p.role === "Lab Administration")
+
+  // Prepare images for lightbox - just the URLs
+  const groupPhotoImages = groupPhotos.map((photo) => photo.image)
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index)
+    setLightboxOpen(true)
+  }
 
   return (
     <div className="flex flex-col">
@@ -380,15 +390,19 @@ export default function PeoplePage() {
           <div className="section-container">
             <h2 className="mb-8 text-2xl font-bold">Group Photos</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {groupPhotos.map((photo) => (
+              {groupPhotos.map((photo, idx) => (
                 <Card key={photo.id} className="group overflow-hidden transition-all hover:shadow-soft-lg">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-muted/30">
+                  <button
+                    type="button"
+                    onClick={() => openLightbox(idx)}
+                    className="relative aspect-[4/3] w-full cursor-zoom-in overflow-hidden bg-muted/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
                     <img
                       src={photo.image}
                       alt={photo.title}
                       className="size-full object-cover transition-transform group-hover:scale-105"
                     />
-                  </div>
+                  </button>
                   <CardHeader>
                     <CardTitle className="text-lg">{photo.title}</CardTitle>
                     <CardDescription className="mt-2">{photo.description}</CardDescription>
@@ -408,6 +422,14 @@ export default function PeoplePage() {
                 </Card>
               ))}
             </div>
+            <ImageLightbox
+              images={groupPhotoImages}
+              currentIndex={currentImageIndex}
+              isOpen={lightboxOpen}
+              onClose={() => setLightboxOpen(false)}
+              onNavigate={setCurrentImageIndex}
+              title="Group Photos"
+            />
           </div>
         </section>
       )}
