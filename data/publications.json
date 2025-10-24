@@ -60,9 +60,14 @@
     "title": "EPFL-Smart-Kitchen-30: Densely annotated cooking dataset with 3D kinematics to challenge video and language models",
     "authors": ["A Bonnetto*", "H Qi*", "F Leong", "M Tashkovska", "M Rad", "S Shokur", "F Hummel", "S Micera", "M Pollefeys", "A Mathis"],
     "year": 2025,
-    "venue": "NeurIPS (in press)",
+    "venue": "NeurIPS 2025",
     "type": "conference",
     "tags": ["datasets", "3D kinematics", "multimodal learning"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2506.01608",
+      "github": "https://github.com/amathislab/EPFL-Smart-Kitchen",
+      "website": "https://amathislab.github.io/EPFL-Smart-Kitchen/"
+    },
     "featured": true
   },
   {
