@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar, ExternalLink, GraduationCap, Mail, MapPin } from "lucide-react"
+import { Calendar, ExternalLink, Mail, MapPin } from "lucide-react"
 import { useState } from "react"
 
 import { ImageLightbox } from "@/components/ImageLightbox"
@@ -18,6 +18,8 @@ export default function PeoplePage() {
 
   const pi = currentMembers.find(p => p.role === "Principal Investigator")
   const phd = currentMembers.filter(p => p.role === "PhD Student")
+  const masters = currentMembers.filter(p => p.role === "Master Student")
+  const visiting = currentMembers.filter(p => p.role === "Visiting Scholar")
   const staff = currentMembers.filter(p => p.role === "Research Staff" || p.role === "Software Engineer")
   const admin = currentMembers.filter(p => p.role === "Lab Administration")
 
@@ -178,6 +180,140 @@ export default function PeoplePage() {
         </div>
       </section>
 
+      {/* Master Students */}
+      {masters.length > 0 && (
+        <section className="py-16 lg:py-24">
+          <div className="section-container">
+            <h2 className="mb-8 text-2xl font-bold">Master Students</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {masters.map((person) => (
+                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
+                  <CardHeader>
+                    <div className="mb-3 flex items-start gap-4">
+                      {person.avatar && (
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                          <img
+                            src={person.avatar}
+                            alt={person.name}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
+                      </div>
+                    </div>
+                    {person.project && (
+                      <CardDescription className="mt-2">{person.project}</CardDescription>
+                    )}
+                    {person.cosupervised && (
+                      <p className="mt-2 text-sm text-muted-foreground">
+                        Co-supervised with {person.cosupervised}
+                      </p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    {person.links && (
+                      <div className="mb-3 flex flex-wrap gap-3">
+                        {Object.entries(person.links).map(([key, url]) => {
+                          const displayName = key === 'website' ? 'Website' : key.charAt(0).toUpperCase() + key.slice(1)
+                          return (
+                            <a
+                              key={key}
+                              href={url as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                            >
+                              <ExternalLink className="size-3" />
+                              {displayName}
+                            </a>
+                          )
+                        })}
+                      </div>
+                    )}
+                    {person.tags && person.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {person.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Visiting Scholars */}
+      {visiting.length > 0 && (
+        <section className="bg-muted/30 py-16 lg:py-24">
+          <div className="section-container">
+            <h2 className="mb-8 text-2xl font-bold">Visiting Scholars</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {visiting.map((person) => (
+                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
+                  <CardHeader>
+                    <div className="mb-3 flex items-start gap-4">
+                      {person.avatar && (
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                          <img
+                            src={person.avatar}
+                            alt={person.name}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
+                      </div>
+                    </div>
+                    {person.project && (
+                      <CardDescription className="mt-2">{person.project}</CardDescription>
+                    )}
+                    {person.note && (
+                      <p className="mt-2 text-sm italic text-muted-foreground">{person.note}</p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    {person.links && (
+                      <div className="mb-3 flex flex-wrap gap-3">
+                        {Object.entries(person.links).map(([key, url]) => {
+                          const displayName = key === 'website' ? 'Website' : key.charAt(0).toUpperCase() + key.slice(1)
+                          return (
+                            <a
+                              key={key}
+                              href={url as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                            >
+                              <ExternalLink className="size-3" />
+                              {displayName}
+                            </a>
+                          )
+                        })}
+                      </div>
+                    )}
+                    {person.tags && person.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {person.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Research Staff */}
       {staff.length > 0 && (
         <section className="py-16 lg:py-24">
@@ -309,7 +445,6 @@ export default function PeoplePage() {
         <section className="bg-muted/30 py-16 lg:py-24">
           <div className="section-container">
             <div className="mb-8 flex items-center gap-3">
-              <GraduationCap className="size-8 text-primary" />
               <h2 className="text-2xl font-bold">Lab Alumni</h2>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
