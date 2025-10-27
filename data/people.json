@@ -132,12 +132,14 @@
     "id": "arash",
     "name": "Arash Sal Moslehian",
     "role": "Master Student",
-    "avatar": "https://avatars.githubusercontent.com/u/57039957?v=4",
-    "project": "Lab immersion and software development",
+    "avatar": "/images/people/arash-sal-moslehian.jpg",
+    "project": "Sensorimotor control and behavior analysis",
     "links": {
-      "website": "https://moslehian.com"
+      "website": "https://moslehian.com",
+      "scholar": "https://scholar.google.com/citations?user=2eOS1yEAAAAJ",
+      "github": "https://github.com/arashsm79"
     },
-    "tags": ["behavior analysis", "sensorimotor control"],
+    "tags": ["sensorimotor control", "behavior analysis", "DeepLabCut"],
     "status": "current"
   },
   {
