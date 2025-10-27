@@ -8,7 +8,7 @@
     "bio": "Alexander Mathis is an Assistant Professor at EPFL. He holds a Diplom in Mathematics and a PhD from Ludwig-Maximilians-University Munich (with Prof. Andreas Herz). He was a postdoc with Prof. Venkatesh N. Murthy at Harvard University and Prof. Matthias Bethge at Tuebingen AI.",
     "email": "alexander.mathis@epfl.ch",
     "links": {
-      "scholar": "https://scholar.google.com",
+      "scholar": "https://scholar.google.com/citations?user=Y1xCzE0AAAAJ&hl=en",
       "github": "https://github.com/AlexEMG",
       "website": "https://people.epfl.ch/alexander.mathis"
     },
@@ -126,6 +126,20 @@
       "website": "https://people.epfl.ch/matea.tashkovska"
     },
     "tags": ["behavior analysis"],
+    "status": "current"
+  },
+  {
+    "id": "arash",
+    "name": "Arash Sal Moslehian",
+    "role": "Master Student",
+    "avatar": "/images/people/arash-sal-moslehian.jpg",
+    "project": "Sensorimotor control and behavior analysis",
+    "links": {
+      "website": "https://moslehian.com",
+      "scholar": "https://scholar.google.com/citations?user=2eOS1yEAAAAJ",
+      "github": "https://github.com/arashsm79"
+    },
+    "tags": ["sensorimotor control", "behavior analysis", "DeepLabCut"],
     "status": "current"
   },
   {
