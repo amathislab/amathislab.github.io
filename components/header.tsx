@@ -87,20 +87,21 @@ export function Header() {
         </div>
         <div className="hidden items-center gap-6 lg:flex">
           <div className="flex items-center gap-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
-                  pathname === item.href
-                    ? "text-foreground"
-                    : "text-muted-foreground"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href || pathname === `${item.href}/`
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    isActive ? "text-foreground" : "text-muted-foreground"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              )
+            })}
           </div>
           <ThemeToggle />
         </div>
@@ -116,21 +117,22 @@ export function Header() {
             style={{ top: headerOffset }}
           >
             <div className="section-container space-y-1 py-6">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={cn(
-                    "block rounded-md px-3 py-2 text-base font-medium transition-colors hover:bg-accent",
-                    pathname === item.href
-                      ? "bg-accent text-foreground"
-                      : "text-muted-foreground"
-                  )}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const isActive = pathname === item.href || pathname === `${item.href}/`
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={cn(
+                      "block rounded-md px-3 py-2 text-base transition-colors hover:bg-accent",
+                      isActive ? "bg-accent text-foreground" : "text-muted-foreground"
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              })}
             </div>
           </div>,
           document.body
