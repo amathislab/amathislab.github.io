@@ -42,7 +42,7 @@ export default function PeoplePage() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
               We are a diverse group of researchers working at the intersection of neuroscience,
-              machine learning, and computer vision.
+              artificial intelligence, and computer vision.
             </p>
           </div>
         </div>

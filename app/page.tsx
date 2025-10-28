@@ -38,7 +38,7 @@ export default function Home() {
                   href="/research"
                   className="underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground"
                 >
-                  machine learning
+                  artificial intelligence
                 </Link>
               </h1>
               <p className="animate-slide-up text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-base">
@@ -80,8 +80,8 @@ export default function Home() {
               Research Directions
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We develop machine learning tools for behavioral and neural data analysis,
-              and conversely try to learn from the brain to solve challenging machine learning problems.
+              We develop artificial intelligence tools for behavioral and neural data analysis,
+              and conversely try to learn from the brain to solve challenging artificial intelligence problems.
             </p>
           </div>
 

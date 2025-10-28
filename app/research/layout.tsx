@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Research | Mathis Group",
     description:
-      "We develop machine learning tools for behavioral and neural data analysis, and learn from the brain to solve challenging ML problems.",
+      "We develop artificial intelligence tools for behavioral and neural data analysis, and learn from the brain to solve challenging artificial intelligence problems.",
   },
 }
 
