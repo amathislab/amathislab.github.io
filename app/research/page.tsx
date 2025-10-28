@@ -260,8 +260,8 @@ export default function ResearchPage() {
           <div className="mx-auto max-w-2xl space-y-6 text-center sm:space-y-8">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">Research</h1>
             <p className="text-lg leading-8 text-muted-foreground">
-              We develop machine learning tools for behavioral and neural data analysis, and
-              conversely learn from the brain to solve challenging machine learning problems.
+              We develop artificial intelligence tools for behavioral and neural data analysis, and
+              conversely learn from the brain to solve challenging artificial intelligence problems.
             </p>
           </div>
         </div>

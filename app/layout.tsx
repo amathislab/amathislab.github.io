@@ -14,17 +14,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mathis Group | Computational Neuroscience & Machine Learning",
-  description: "We work at the intersection of computational neuroscience and machine learning to understand behavior and reverse-engineer brain algorithms.",
-  keywords: ["neuroscience", "machine learning", "computational neuroscience", "DeepLabCut", "motor control", "EPFL"],
+  title: "Mathis Group | Computational Neuroscience & Artificial Intelligence",
+  description: "We work at the intersection of computational neuroscience and artificial intelligence to understand behavior and reverse-engineer brain algorithms.",
+  keywords: ["neuroscience", "artificial intelligence", "computational neuroscience", "DeepLabCut", "motor control", "EPFL"],
   authors: [{ name: "Alexander Mathis" }],
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "Mathis Group | Computational Neuroscience & Machine Learning",
-    description: "We work at the intersection of computational neuroscience and machine learning to understand behavior and reverse-engineer brain algorithms.",
+    title: "Mathis Group | Computational Neuroscience & Artificial Intelligence",
+    description: "We work at the intersection of computational neuroscience and artificial intelligence to understand behavior and reverse-engineer brain algorithms.",
     type: "website",
     locale: "en_US",
   },
