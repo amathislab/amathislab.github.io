@@ -82,14 +82,16 @@
     "name": "Michał Grudzień",
     "role": "PhD Student",
     "avatar": "/images/people/michal.jpg",
-    "project": "behavior analysis",
+    "project": "Hierarchical representation learning for behavior & neural data",
     "links": {
       "website": "https://people.epfl.ch/michal.grudzien",
-      "scholar": "https://scholar.google.com/citations?user=vN2ALVYAAAAJ&hl=en"
+      "scholar": "https://scholar.google.com/citations?user=vN2ALVYAAAAJ&hl=en",
+      "github": "https://github.com/MajkelDcember"
     },
-    "tags": ["behavior analysis", "machine learning"],
+    "tags": ["Representation learning", "multimodal"],
     "status": "current"
-  },
+  }
+  ,
   {
     "id": "chengkun-li",
     "name": "Chengkun Li",
