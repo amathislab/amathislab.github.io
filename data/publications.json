@@ -44,20 +44,23 @@
   {
     "id": "dlc2action-2025",
     "title": "DLC2Action: A Deep Learning-based Toolbox for Automated Behavior Segmentation",
+    "image": "/images/publications/dlc2action.png",
     "authors": ["E Kozlova", "A Bonnetto", "A Mathis"],
     "year": 2025,
-    "venue": "bioRxiv",
+    "venue": "bioRxiv preprint",
     "type": "preprint",
     "tags": ["behavior analysis", "deep learning", "neuroscience"],
     "links": {
       "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.09.27.678941",
-      "github": "https://github.com/amathislab/DLC2action"
+      "github": "https://github.com/amathislab/DLC2action",
+      "docs": "https://amathislab.github.io/DLC2action/html_docs/dlc2action.html"
     },
     "featured": true
   },
   {
     "id": "smart-kitchen-2025",
     "title": "EPFL-Smart-Kitchen-30: Densely annotated cooking dataset with 3D kinematics to challenge video and language models",
+    "image": "/images/publications/esk.png",
     "authors": ["A Bonnetto*", "H Qi*", "F Leong", "M Tashkovska", "M Rad", "S Shokur", "F Hummel", "S Micera", "M Pollefeys", "A Mathis"],
     "year": 2025,
     "venue": "NeurIPS 2025",

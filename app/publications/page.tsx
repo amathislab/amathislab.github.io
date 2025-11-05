@@ -229,6 +229,15 @@ export default function PublicationsPage() {
                                 </a>
                               </Button>
                             )}
+                            {pub.links.docs && (
+                              <Button asChild variant="outline" size="sm">
+                                <a href={pub.links.docs} target="_blank" rel="noopener noreferrer">
+                                  <FileText className="mr-2 size-4" />
+                                  docs
+                                  <ExternalLink className="ml-2 size-3" />
+                                </a>
+                              </Button>
+                            )}
                           </div>
                         )}
                       </CardContent>
