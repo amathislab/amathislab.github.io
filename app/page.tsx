@@ -212,6 +212,14 @@ export default function Home() {
                             </a>
                           </Button>
                         )}
+                        {pub.links.docs && (
+                          <Button asChild variant="outline" size="sm">
+                            <a href={pub.links.docs} target="_blank" rel="noopener noreferrer">
+                              <FileText className="mr-2 size-3" />
+                              Docs
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     )}
                   </CardContent>

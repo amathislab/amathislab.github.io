@@ -21,6 +21,7 @@ interface Tool {
   arxiv?: string
   paper?: string
   website?: string
+  docs?: string
 }
 
 interface ResearchArea {
@@ -133,7 +134,7 @@ function MediaMosaic({ images, title }: { images: string[]; title: string }) {
 
 // Tool card with link guards
 function ToolCard({ tool }: { tool: Tool }) {
-  const hasLinks = Boolean(tool.github || tool.arxiv || tool.paper || tool.website)
+  const hasLinks = Boolean(tool.github || tool.arxiv || tool.paper || tool.website || tool.docs)
 
   // Dev warning for tools without links
   if (!hasLinks && process.env.NODE_ENV === "development") {
@@ -189,6 +190,16 @@ function ToolCard({ tool }: { tool: Tool }) {
                 <a href={tool.website} target="_blank" rel="noopener noreferrer">
                   <Globe className="mr-2 size-3" aria-hidden="true" />
                   <span>Website</span>
+                  <ExternalLink className="ml-2 size-3" aria-hidden="true" />
+                  <span className="sr-only">Opens in new tab</span>
+                </a>
+              </Button>
+            )}
+            {tool.docs && (
+              <Button asChild variant="ghost" size="sm">
+                <a href={tool.docs} target="_blank" rel="noopener noreferrer">
+                  <Globe className="mr-2 size-3" aria-hidden="true" />
+                  <span>Docs</span>
                   <ExternalLink className="ml-2 size-3" aria-hidden="true" />
                   <span className="sr-only">Opens in new tab</span>
                 </a>
