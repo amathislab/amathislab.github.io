@@ -94,11 +94,15 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
-                    isActive ? "text-foreground" : "text-muted-foreground"
+                    "group relative text-sm font-medium transition-all duration-200",
+                    isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {item.name}
+                  <span className={cn(
+                    "absolute -bottom-1 left-0 h-0.5 bg-foreground transition-all duration-300",
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  )} />
                 </Link>
               )
             })}
@@ -113,20 +117,21 @@ export function Header() {
         createPortal(
           <div
             id="mobile-nav"
-            className="fixed inset-x-0 bottom-0 z-50 overflow-y-auto border-t border-border bg-background/95 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/80 lg:hidden"
+            className="fixed inset-x-0 bottom-0 z-50 animate-slide-down overflow-y-auto border-t border-border bg-background/95 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/80 lg:hidden"
             style={{ top: headerOffset }}
           >
             <div className="section-container space-y-1 py-6">
-              {navigation.map((item) => {
+              {navigation.map((item, index) => {
                 const isActive = pathname === item.href || pathname === `${item.href}/`
                 return (
                   <Link
                     key={item.name}
                     href={item.href}
                     className={cn(
-                      "block rounded-md px-3 py-2 text-base transition-colors hover:bg-accent",
+                      "block rounded-md px-3 py-2 text-base transition-all hover:bg-accent hover:pl-4",
                       isActive ? "bg-accent text-foreground" : "text-muted-foreground"
                     )}
+                    style={{ animationDelay: `${index * 50}ms` }}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
