@@ -69,7 +69,7 @@
     "id": "merkourios-simos",
     "name": "Merkourios Simos",
     "role": "PhD Student",
-    "avatar": "/images/people/merkourios-thodoris.jpg",
+    "avatar": "/images/people/merkourios.jpg",
     "project": "Proprioception, sensorimotor control and learning",
     "links": {
       "website": "https://people.epfl.ch/merkourios.simos"
@@ -109,7 +109,7 @@
     "id": "bianca-ziliotto",
     "name": "Bianca Ziliotto",
     "role": "PhD Student",
-    "avatar": "/images/people/bianca-carioni.jpg",
+    "avatar": "/images/people/bianca.jpg",
     "project": "Proprioception and sensorimotor control",
     "links": {
       "website": "https://people.epfl.ch/bianca.ziliotto"
@@ -159,7 +159,7 @@
     "id": "maxim-pavliv",
     "name": "Maxim Pavliv",
     "role": "Software Engineer",
-    "avatar": "/images/people/max-beddies.jpg",
+    "avatar": "/images/people/max.jpg",
     "project": "All things software, including DeepLabCut",
     "note": "Also works in M.W. Mathis lab",
     "tags": ["software engineering", "DeepLabCut"],
@@ -202,7 +202,7 @@
     "name": "Alberto Chiappa",
     "role": "Alumni",
     "degree": "PhD",
-    "avatar": "/images/people/alberto-silvio-chiappa.jpg",
+    "avatar": "/images/people/alberto.jpg",
     "project": "Reinforcement learning for motor control",
     "graduationYear": 2025,
     "graduationSeason": "Spring",
@@ -218,7 +218,7 @@
     "name": "Mu Zhou",
     "role": "Alumni",
     "degree": "PhD",
-    "avatar": "/images/people/mu-qiao.jpg",
+    "avatar": "/images/people/mu.jpg",
     "project": "Pose estimation and ReID",
     "graduationYear": 2025,
     "graduationSeason": "Fall",
@@ -234,7 +234,7 @@
     "name": "Adriana Perez Rotondo",
     "role": "Alumni",
     "degree": "Postdoc",
-    "avatar": "/images/people/adriana-mendez-leal.jpeg",
+    "avatar": "/images/people/adriana.jpeg",
     "project": "Modeling and theory for sensorimotor circuits",
     "links": {
       "scholar": "https://scholar.google.com/citations?hl=en&user=buPwZfgAAAAJ"
