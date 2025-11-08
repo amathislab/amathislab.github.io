@@ -130,4 +130,33 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* Animated underline that works with multi-line text */
+  .animated-underline {
+    background-image:
+      linear-gradient(currentColor, currentColor),
+      linear-gradient(hsl(var(--foreground) / 0.25), hsl(var(--foreground) / 0.25));
+    background-size: 0% 1px, 100% 1px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background-size 300ms ease-out;
+  }
+
+  .animated-underline:hover {
+    background-size: 100% 1px, 100% 1px;
+  }
+
+  .animated-underline-muted {
+    background-image:
+      linear-gradient(currentColor, currentColor),
+      linear-gradient(hsl(var(--muted-foreground) / 0.3), hsl(var(--muted-foreground) / 0.3));
+    background-size: 0% 1px, 100% 1px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background-size 300ms ease-out, color 200ms ease-out;
+  }
+
+  .animated-underline-muted:hover {
+    background-size: 100% 1px, 100% 1px;
+  }
 }

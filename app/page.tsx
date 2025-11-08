@@ -27,33 +27,18 @@ export default function Home() {
             <div className="space-y-5 lg:space-y-6">
               <h1 className="animate-fade-in text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem] xl:text-5xl">
                 We work at the intersection of{" "}
-                <Link
-                  href="/research"
-                  className="group relative inline-block"
-                >
+                <Link href="/research" className="animated-underline">
                   computational neuroscience
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-full bg-foreground/25" />
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
                 </Link>{" "}
                 and{" "}
-                <Link
-                  href="/research"
-                  className="group relative inline-block"
-                >
+                <Link href="/research" className="animated-underline">
                   machine learning
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-full bg-foreground/25" />
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
                 </Link>
               </h1>
               <p className="animate-slide-up text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-base">
                 We are interested in understanding{" "}
-                <Link
-                  href="/publications"
-                  className="group relative inline-block transition-colors hover:text-foreground"
-                >
+                <Link href="/publications" className="animated-underline-muted hover:text-foreground">
                   behavior
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-full bg-muted-foreground/30" />
-                  <span className="absolute -bottom-0.5 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
                 </Link>{" "}
                 in computational terms and in reverse-engineering the algorithms of the brain.
               </p>
