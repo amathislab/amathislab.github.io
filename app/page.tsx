@@ -29,31 +29,31 @@ export default function Home() {
                 We work at the intersection of{" "}
                 <Link
                   href="/research"
-                  className="group relative inline-block"
+                  className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
                   computational neuroscience
-                  <span className="absolute bottom-1 left-0 h-[1px] w-full bg-foreground/25" />
-                  <span className="absolute bottom-1 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-1 left-0 hidden h-[1px] w-full bg-foreground/25 sm:block" />
+                  <span className="absolute bottom-1 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>{" "}
                 and{" "}
                 <Link
                   href="/research"
-                  className="group relative inline-block"
+                  className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
                   machine learning
-                  <span className="absolute bottom-1 left-0 h-[1px] w-full bg-foreground/25" />
-                  <span className="absolute bottom-1 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-1 left-0 hidden h-[1px] w-full bg-foreground/25 sm:block" />
+                  <span className="absolute bottom-1 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>
               </h1>
               <p className="animate-slide-up text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-base">
                 We are interested in understanding{" "}
                 <Link
                   href="/publications"
-                  className="group relative inline-block transition-colors hover:text-foreground"
+                  className="group relative inline-block transition-colors hover:text-foreground underline decoration-muted-foreground/50 decoration-1 underline-offset-2 hover:decoration-foreground sm:no-underline"
                 >
                   behavior
-                  <span className="absolute bottom-0.5 left-0 h-[1px] w-full bg-muted-foreground/30" />
-                  <span className="absolute bottom-0.5 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-0.5 left-0 hidden h-[1px] w-full bg-muted-foreground/30 sm:block" />
+                  <span className="absolute bottom-0.5 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>{" "}
                 in computational terms and in reverse-engineering the algorithms of the brain.
               </p>

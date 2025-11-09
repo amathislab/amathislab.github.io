@@ -59,7 +59,7 @@ export default function PositionsPage() {
                     computer science, computational neuroscience, or related fields
                   </p>
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLScyKbu2Hfv24i3RClKZsAEnt8Rzo77RQ27w-VIo4fZEFk8QFg/viewform"
@@ -67,6 +67,16 @@ export default function PositionsPage() {
                       rel="noopener noreferrer"
                     >
                       Express Interest (EPFL Students)
+                      <ExternalLink className="ml-2 size-4" />
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <a
+                      href="https://docs.google.com/document/u/2/d/e/2PACX-1vSWTi96M7RRfSEsYcVNooaq8wAqUBLuUkXTgEkUHCGKW8uERxzpl0hfkobAdkcp77_nhnY_8fbjcDrS/pub"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Open Projects
                       <ExternalLink className="ml-2 size-4" />
                     </a>
                   </Button>
