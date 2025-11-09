@@ -45,28 +45,44 @@ export default function PositionsPage() {
               </CardHeader>
               <CardContent>
                 <p className="mb-4 text-muted-foreground">
-                  We are always actively looking for undergraduate and master&apos;s students with
-                  interests in behavioral analysis and modeling sensorimotor learning.
+                  We are always actively mentoring undergraduate and master&apos;s students with
+                  interests in AI4Science, sensorimotor learning, computer vision, robotics, and related fields
+                  for semester projects and thesis.
                 </p>
-                <div className="space-y-2">
-                  <p className="text-sm">
-                    <span className="font-medium">Research areas:</span> Machine learning tools
-                    for animal behavior analysis, brain-inspired motor skill learning, proprioception
-                    and sensorimotor processing
-                  </p>
-                  <p className="text-sm">
-                    <span className="font-medium">Requirements:</span> Background in mathematics,
-                    computer science, computational neuroscience, or related fields
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="mb-2 text-sm font-medium">Requirements:</h4>
+                    <ul className="ml-4 list-disc space-y-1 text-sm text-muted-foreground">
+                      <li>Background in mathematics, computer science, computational neuroscience, or related fields</li>
+                      <li>Self-motivated and high standards for their work</li>
+                    </ul>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-medium">Note:</span> Our Open Projects list is only accessible within the EPFL network.
+                    External students, please reach out via our{" "}
+                    <Link href="/contact" className="text-primary hover:underline">
+                      contact page
+                    </Link>.
                   </p>
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
+                    <a
+                      href="https://docs.google.com/document/u/2/d/e/2PACX-1vSWTi96M7RRfSEsYcVNooaq8wAqUBLuUkXTgEkUHCGKW8uERxzpl0hfkobAdkcp77_nhnY_8fbjcDrS/pub"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Open Projects (EPFL Only)
+                      <ExternalLink className="ml-2 size-4" />
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline">
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLScyKbu2Hfv24i3RClKZsAEnt8Rzo77RQ27w-VIo4fZEFk8QFg/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Express Interest (EPFL Students)
+                      Fill Out Form
                       <ExternalLink className="ml-2 size-4" />
                     </a>
                   </Button>
