@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react"
+import { Github, Mail, Youtube } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -33,6 +33,15 @@ export function Footer() {
               Computational neuroscience and machine learning research at EPFL.
             </p>
             <div className="mt-4 flex gap-4">
+              <a
+                href="https://www.youtube.com/@amathis_group"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                aria-label="YouTube"
+              >
+                <Youtube className="size-5" />
+              </a>
               <a
                 href="https://github.com/amathislab"
                 target="_blank"
