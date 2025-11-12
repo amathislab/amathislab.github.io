@@ -156,6 +156,20 @@
     "status": "current"
   },
   {
+    "id": "jaap-de-ruyter",
+    "name": "Jaap de Ruyter van Steveninck",
+    "role": "Software Engineer",
+    "avatar": "/images/people/jaap.jpg",
+    "project": "All things software, including DeepLabCut",
+    "note": "Also works in M.W. Mathis lab",
+    "links": {
+      "website": "https://jaapderuyter.com/",
+      "scholar": "https://scholar.google.nl/citations?user=751H_tMAAAAJ"
+    },
+    "tags": ["software engineering", "DeepLabCut"],
+    "status": "current"
+  },
+  {
     "id": "maxim-pavliv",
     "name": "Maxim Pavliv",
     "role": "Software Engineer",
