@@ -159,4 +159,9 @@
   .animated-underline-muted:hover {
     background-size: 100% 1px, 100% 1px;
   }
+
+  /* Gradient text for banner keywords */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-500 via-violet-500 to-emerald-500;
+  }
 }
