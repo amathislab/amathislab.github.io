@@ -6,6 +6,7 @@ import { FunderSection } from "@/components/funding/FunderSection"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Aurora } from "@/components/visuals/Aurora"
 import publicationsData from "@/data/publications.json"
 import researchData from "@/data/research.json"
 
@@ -15,7 +16,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative border-b">
+      <section className="relative overflow-hidden border-b">
+        <Aurora />
         <div className="section-container py-20 sm:py-24 lg:py-32">
           <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[2.5fr_1fr] lg:gap-16">
             {/* Logo - Mobile Only (Top) */}
@@ -31,7 +33,7 @@ export default function Home() {
                   href="/research"
                   className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
-                  computational neuroscience
+                  <span className="text-gradient">computational neuroscience</span>
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-full bg-foreground/25 sm:block" />
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>{" "}
@@ -40,7 +42,7 @@ export default function Home() {
                   href="/research"
                   className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
-                  machine learning
+                  <span className="text-gradient">machine learning</span>
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-full bg-foreground/25 sm:block" />
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>
