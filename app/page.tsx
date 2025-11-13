@@ -261,7 +261,7 @@ export default function Home() {
                     <div className="mt-2 text-sm text-muted-foreground">Open sourced tools</div>
                   </div>
                   <div>
-                    <div className="text-4xl font-bold text-primary">2×</div>
+                    <div className="text-4xl font-bold text-primary">3×</div>
                     <div className="mt-2 text-sm text-muted-foreground">NeurIPS Winners</div>
                   </div>
                 </div>
