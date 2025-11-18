@@ -1,5 +1,13 @@
 [
   {
+    "id": "alberto-graduation-2025",
+    "title": "Alberto's Graduation 2025",
+    "date": "2025-05",
+    "location": "Geneva",
+    "image": "/images/group/alberto_graduation.jpeg",
+    "description": "Alberto's graduation ceremony in 2025"
+  },
+  {
     "id": "lab-retreat-2025",
     "title": "Lab Retreat 2025",
     "date": "2025-03",
