@@ -30,6 +30,7 @@
   },
   {
     "id": "motion-imitation-2025",
+    "image": "/images/publications/kinesis.jpg",
     "title": "Reinforcement learning-based motion imitation for physiologically plausible musculoskeletal motor control",
     "authors": ["M Simos", "AS Chiappa", "A Mathis"],
     "year": 2025,
@@ -76,13 +77,28 @@
   {
     "id": "mammalps-2024",
     "title": "MammAlps: A multi-view video behavior monitoring dataset of wild mammals in the Swiss Alps",
+    "image": "/images/publications/mammalps.jpg",
     "authors": ["V Gabeff", "H Qi", "B Flaherty", "G Sumbül", "A Mathis*", "D Tuia*"],
-    "year": 2024,
+    "year": 2025,
     "venue": "CVPR (highlight)",
     "type": "conference",
     "tags": ["wildlife conservation", "datasets", "computer vision"],
     "links": {
-      "arxiv": "https://arxiv.org/abs/2404.xxxxx"
+      "arxiv": "https://arxiv.org/pdf/2503.18223"
+    },
+    "featured": true
+  },
+  {
+    "id": "curriculum-rl-2024",
+    "title": "Acquiring musculoskeletal skills with curriculum-based reinforcement learning",
+    "image": "/images/publications/curriculum.jpg",
+    "authors": ["AS Chiappa", "P Tano", "N Patel", "A Ingster", "A Pouget", "A Mathis"],
+    "year": 2024,
+    "venue": "Neuron",
+    "type": "journal",
+    "tags": ["reinforcement learning", "motor control", "curriculum learning"],
+    "links": {
+      "arxiv": "https://www.sciencedirect.com/science/article/pii/S0896627324006500"
     },
     "featured": true
   },
@@ -96,16 +112,6 @@
     "pages": "5814-5832",
     "type": "journal",
     "tags": ["neuroscience", "neural decoding", "mechanistic models"],
-    "featured": true
-  },
-  {
-    "id": "curriculum-rl-2024",
-    "title": "Acquiring musculoskeletal skills with curriculum-based reinforcement learning",
-    "authors": ["AS Chiappa", "P Tano", "N Patel", "A Ingster", "A Pouget", "A Mathis"],
-    "year": 2024,
-    "venue": "Neuron",
-    "type": "journal",
-    "tags": ["reinforcement learning", "motor control", "curriculum learning"],
     "featured": true
   },
   {
