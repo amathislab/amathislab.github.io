@@ -1,8 +1,9 @@
-import { ArrowRight, Brain, Code, Code2, FileText, Globe, Telescope } from "lucide-react"
+import { ArrowRight, Brain, Code2, Telescope } from "lucide-react"
 import Link from "next/link"
 
 import { AnimatedLogo } from "@/components/animations/AnimatedLogo"
 import { FunderSection } from "@/components/funding/FunderSection"
+import { ResearchHighlight } from "@/components/research/ResearchHighlight"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -11,7 +12,7 @@ import publicationsData from "@/data/publications.json"
 import researchData from "@/data/research.json"
 
 export default function Home() {
-  const featuredPublications = publicationsData.filter(pub => pub.featured).slice(0, 6)
+  const featuredPublications = publicationsData.filter(pub => pub.featured).slice(0, 7)
 
   return (
     <div className="flex flex-col">
@@ -136,107 +137,7 @@ export default function Home() {
       </section>
 
       {/* Featured Research */}
-      <section className="bg-muted/30 py-24 lg:py-32">
-        <div className="section-container">
-          <div className="flex items-end justify-between">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Featured Publications
-              </h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Recent advances from our lab
-              </p>
-            </div>
-            <Button asChild variant="outline">
-              <Link href="/publications">View All</Link>
-            </Button>
-          </div>
-
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredPublications.map((pub) => {
-              const pubWithImage = pub as typeof pub & { image?: string }
-              return (
-                <Card key={pub.id} className="group transition-all hover:shadow-soft-lg">
-                  <CardHeader>
-                    <Badge variant="outline" className="mb-3 w-fit">
-                      {pub.year}
-                    </Badge>
-                    <CardTitle className="text-lg leading-tight transition-colors group-hover:text-primary">
-                      {pub.title}
-                    </CardTitle>
-                    <CardDescription className="mt-2">
-                      {pub.authors.join(", ")}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {pubWithImage.image && (
-                      <div className="overflow-hidden rounded-lg border bg-white shadow-sm dark:bg-white/90">
-                        <img
-                          src={pubWithImage.image}
-                          alt={pub.title}
-                          className="h-auto w-full"
-                        />
-                      </div>
-                    )}
-                    <div className="flex flex-wrap gap-2">
-                      {pub.tags.slice(0, 3).map((tag) => (
-                        <Badge key={tag} variant="secondary" className="text-xs">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                    <p className="text-sm text-muted-foreground">{pub.venue}</p>
-                    {pub.links && (
-                      <div className="flex flex-wrap gap-2">
-                        {pub.links.arxiv && (
-                          <Button asChild variant="outline" size="sm">
-                            <a href={pub.links.arxiv} target="_blank" rel="noopener noreferrer">
-                              <FileText className="mr-2 size-3" />
-                              arXiv
-                            </a>
-                          </Button>
-                        )}
-                        {pub.links.biorxiv && (
-                          <Button asChild variant="outline" size="sm">
-                            <a href={pub.links.biorxiv} target="_blank" rel="noopener noreferrer">
-                              <FileText className="mr-2 size-3" />
-                              bioRxiv
-                            </a>
-                          </Button>
-                        )}
-                        {pub.links.github && (
-                          <Button asChild variant="outline" size="sm">
-                            <a href={pub.links.github} target="_blank" rel="noopener noreferrer">
-                              <Code className="mr-2 size-3" />
-                              Code
-                            </a>
-                          </Button>
-                        )}
-                        {pub.links.website && (
-                          <Button asChild variant="outline" size="sm">
-                            <a href={pub.links.website} target="_blank" rel="noopener noreferrer">
-                              <Globe className="mr-2 size-3" />
-                              Website
-                            </a>
-                          </Button>
-                        )}
-                        {pub.links.docs && (
-                          <Button asChild variant="outline" size="sm">
-                            <a href={pub.links.docs} target="_blank" rel="noopener noreferrer">
-                              <FileText className="mr-2 size-3" />
-                              Docs
-                            </a>
-                          </Button>
-                        )}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <ResearchHighlight publications={featuredPublications} />
 
       {/* Impact Section */}
       <section className="py-24 lg:py-32">

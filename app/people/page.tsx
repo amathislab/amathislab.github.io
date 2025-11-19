@@ -16,6 +16,15 @@ export default function PeoplePage() {
   const currentMembers = peopleData.filter(p => p.status === "current")
   const alumni = peopleData.filter(p => p.status === "alumni")
 
+  // Helper function to get primary link (website > scholar > other)
+  const getPrimaryLink = (person: typeof peopleData[0]) => {
+    if (!person.links) return null
+    if (person.links.website) return person.links.website
+    if (person.links.scholar) return person.links.scholar
+    const otherLinks = Object.values(person.links)
+    return otherLinks.length > 0 ? otherLinks[0] : null
+  }
+
   const pi = currentMembers.find(p => p.role === "Principal Investigator")
   const phd = currentMembers.filter(p => p.role === "PhD Student")
   const masters = currentMembers.filter(p => p.role === "Master Student")
@@ -66,7 +75,20 @@ export default function PeoplePage() {
                     </div>
                   )}
                   <div className="flex-1">
-                    <CardTitle className="text-2xl">{pi.name}</CardTitle>
+                    <CardTitle className="text-2xl">
+                      {getPrimaryLink(pi) ? (
+                        <a
+                          href={getPrimaryLink(pi) as string}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                        >
+                          {pi.name}
+                        </a>
+                      ) : (
+                        pi.name
+                      )}
+                    </CardTitle>
                     <CardDescription className="mt-2 text-lg">{pi.title}</CardDescription>
                     {pi.bio && (
                       <p className="mt-4 leading-relaxed text-muted-foreground">{pi.bio}</p>
@@ -133,7 +155,20 @@ export default function PeoplePage() {
                       </div>
                     )}
                     <div className="min-w-0 flex-1">
-                      <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                      <CardTitle className="text-lg leading-tight">
+                        {getPrimaryLink(person) ? (
+                          <a
+                            href={getPrimaryLink(person) as string}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                          >
+                            {person.name}
+                          </a>
+                        ) : (
+                          person.name
+                        )}
+                      </CardTitle>
                       <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
                     </div>
                   </div>
@@ -200,7 +235,20 @@ export default function PeoplePage() {
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
                         <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
                       </div>
                     </div>
@@ -268,7 +316,20 @@ export default function PeoplePage() {
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
                         <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
                       </div>
                     </div>
@@ -334,7 +395,20 @@ export default function PeoplePage() {
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
                         <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
                       </div>
                     </div>
@@ -397,7 +471,20 @@ export default function PeoplePage() {
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
                         <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
                       </div>
                     </div>
@@ -462,7 +549,20 @@ export default function PeoplePage() {
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">{person.name}</CardTitle>
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
                         {person.degree && (
                           <Badge variant="outline" className="mt-1 text-xs">{person.degree}</Badge>
                         )}
