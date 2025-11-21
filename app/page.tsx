@@ -31,7 +31,7 @@ export default function Home() {
               <h1 className="animate-fade-in text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem] xl:text-5xl">
                 We work at the intersection of{" "}
                 <Link
-                  href="/research"
+                  href="#research"
                   className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
                   <span className="text-gradient">computational neuroscience</span>
@@ -40,7 +40,7 @@ export default function Home() {
                 </Link>{" "}
                 and{" "}
                 <Link
-                  href="/research"
+                  href="#research"
                   className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
                   <span className="text-gradient">machine learning</span>
