@@ -34,14 +34,14 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
 
   const heroPub = publications[0]
   if (!heroPub) return null
-  
+
   const gridPubs = publications.slice(1)
 
-  const getPrimaryLink = (pub: Publication) => 
+  const getPrimaryLink = (pub: Publication) =>
     pub.links?.website || pub.links?.arxiv || pub.links?.biorxiv || "#"
 
   return (
-    <section className="py-24 lg:py-32">
+    <section id="research" className="py-24 lg:py-32">
       <div className="section-container">
         <div className="mb-16 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
@@ -88,9 +88,11 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                 <Link
                   href={getPrimaryLink(heroPub)}
                   target="_blank"
-                  className="mb-3 inline-block text-xl font-bold underline decoration-1 underline-offset-2 transition-all hover:text-primary hover:decoration-2 sm:text-2xl"
+                  className="group mb-3 inline-block text-xl font-bold transition-all duration-300 ease-out hover:translate-x-1 hover:text-primary sm:text-2xl"
                 >
-                  {heroPub.title}
+                  <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_2px] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary">
+                    {heroPub.title}
+                  </span>
                 </Link>
 
                 <p className="mb-5 text-sm text-muted-foreground">
@@ -179,9 +181,11 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                   <Link
                     href={getPrimaryLink(pub)}
                     target="_blank"
-                    className="mb-3 inline-block text-xl font-bold underline decoration-1 underline-offset-2 transition-all hover:text-primary hover:decoration-2"
+                    className="group mb-3 inline-block text-xl font-bold transition-all duration-300 ease-out hover:translate-x-1 hover:text-primary"
                   >
-                    {pub.title}
+                    <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_2px] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary">
+                      {pub.title}
+                    </span>
                   </Link>
 
                   <p className="mb-4 text-sm text-muted-foreground">
