@@ -36,6 +36,14 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Optimize images
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y jpegoptim optipng gifsicle webp
+          find out/images -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim --strip-all --max=85 {} \;
+          find out/images -type f -iname "*.png" -exec optipng -o2 {} \;
+          find out/images -type f -iname "*.gif" -exec gifsicle --batch -O3 {} \;
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
