@@ -145,6 +145,18 @@
     "status": "current"
   },
   {
+    "id": "mateusz-marcol",
+    "name": "Mateusz Marcol",
+    "role": "Master Student",
+    "avatar": "/images/people/mateusz.jpg",
+    "project": "Reinforcement learning",
+    "links": {
+      "website": "https://people.epfl.ch/mateusz.marcol?lang=en"
+    },
+    "tags": ["reinforcement learning"],
+    "status": "current"
+  },
+  {
     "id": "pauline-stehli",
     "name": "Pauline Stehli",
     "role": "Lab Administration",
