@@ -68,7 +68,7 @@ export default function PositionsPage() {
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
                     <a
-                      href="https://docs.google.com/document/u/2/d/e/2PACX-1vSWTi96M7RRfSEsYcVNooaq8wAqUBLuUkXTgEkUHCGKW8uERxzpl0hfkobAdkcp77_nhnY_8fbjcDrS/pub"
+                      href="https://docs.google.com/document/d/1UPPu1vn89Sp2sLvV6PBgBbIHxcqbWXes2tkJLUaPXLM/edit?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
