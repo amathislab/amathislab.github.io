@@ -131,6 +131,18 @@
     "status": "current"
   },
   {
+    "id": "siebe-geurts",
+    "name": "Siebe Geurts",
+    "role": "PhD Student",
+    "avatar": "/images/people/siebe-geurts.jpg",
+    "project": "",
+    "links": {
+      "website": "https://people.epfl.ch/siebe.geurts"
+    },
+    "tags": [],
+    "status": "current"
+  },
+  {
     "id": "arash",
     "name": "Arash Sal Moslehian",
     "role": "Master Student",
@@ -165,7 +177,7 @@
     "project": "",
     "note": "",
     "tags": ["lab management"],
-    "status": "current"
+    "status": "alumni"
   },
   {
     "id": "jaap-de-ruyter",
