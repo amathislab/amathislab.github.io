@@ -168,6 +168,17 @@
     "status": "current"
   },
   {
+    "id": "vanessa-ciherean",
+    "name": "Vanessa Ciherean",
+    "role": "Lab Administration",
+    "degree": "Staff",
+    "avatar": "/images/people/vanessa-ciherean.jpg",
+    "project": "",
+    "note": "",
+    "tags": ["lab management"],
+    "status": "current"
+  },
+  {
     "id": "jaap-de-ruyter",
     "name": "Jaap de Ruyter van Steveninck",
     "role": "Software Engineer",
