@@ -131,6 +131,19 @@
     "status": "current"
   },
   {
+    "id": "siebe-geurts",
+    "name": "Siebe Geurts",
+    "role": "PhD Student",
+    "avatar": "/images/people/siebe-geurts.jpg",
+    "project": "Proprioceptive Illusions",
+    "cosupervised": "Prof. Olaf Blanke",
+    "links": {
+      "website": "https://people.epfl.ch/siebe.geurts"
+    },
+    "tags": [proprioception, sensorimotor system],
+    "status": "current"
+  },
+  {
     "id": "arash",
     "name": "Arash Sal Moslehian",
     "role": "Master Student",
@@ -165,7 +178,7 @@
     "project": "",
     "note": "",
     "tags": ["lab management"],
-    "status": "current"
+    "status": "alumni"
   },
   {
     "id": "vanessa-ciherean",
