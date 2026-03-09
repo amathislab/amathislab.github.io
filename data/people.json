@@ -135,11 +135,12 @@
     "name": "Siebe Geurts",
     "role": "PhD Student",
     "avatar": "/images/people/siebe-geurts.jpg",
-    "project": "",
+    "project": "Proprioceptive Illusions",
+    "cosupervised": "Prof. Olaf Blanke",
     "links": {
       "website": "https://people.epfl.ch/siebe.geurts"
     },
-    "tags": [],
+    "tags": [proprioception, sensorimotor system],
     "status": "current"
   },
   {
