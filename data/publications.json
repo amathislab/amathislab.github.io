@@ -33,9 +33,9 @@
     "title": "LLaVAction: evaluating and training multi-modal large language models for action recognition",
     "image": "/images/publications/llavaction.png",
     "authors": ["S Ye*", "H Qi*", "A Mathis**", "MW Mathis**"],
-    "year": 2025,
-    "venue": "arXiv preprint",
-    "type": "preprint",
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "type": "conference",
     "tags": ["action recognition", "multimodal learning", "LLMs"],
     "links": {
       "arxiv": "https://arxiv.org/abs/2503.18712",
@@ -48,9 +48,9 @@
     "image": "/images/publications/kinesis.jpg",
     "title": "Reinforcement learning-based motion imitation for physiologically plausible musculoskeletal motor control",
     "authors": ["M Simos", "AS Chiappa", "A Mathis"],
-    "year": 2025,
-    "venue": "arXiv preprint",
-    "type": "preprint",
+    "year": 2026,
+    "venue": "ICRA 2026",
+    "type": "conference",
     "tags": ["reinforcement learning", "motor control", "biomechanics"],
     "links": {
       "arxiv": "https://arxiv.org/abs/2503.14637"
