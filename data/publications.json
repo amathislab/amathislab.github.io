@@ -1,5 +1,20 @@
 [
   {
+    "id": "musclemimic-2026",
+    "title": "Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale",
+    "image": "/images/publications/musclemimic.webp",
+    "authors": ["C Li*", "C Wang*", "B Ziliotto", "M Simos", "G Durandau", "A Mathis"],
+    "year": 2026,
+    "venue": "Preprint",
+    "type": "preprint",
+    "tags": ["embodied AI", "reinforcement learning", "biomechanics"],
+    "links": {
+      "github": "https://github.com/amathislab/musclemimic",
+      "website": "https://amathislab.github.io/mm-blog"
+    },
+    "featured": true
+  },
+  {
     "id": "arnold-2025",
     "title": "Arnold: a generalist muscle transformer policy",
     "image": "/images/research/arnold.jpg",
