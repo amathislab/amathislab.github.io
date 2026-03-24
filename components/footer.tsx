@@ -30,7 +30,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <h3 className="text-lg font-bold">Mathis Group</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Computational neuroscience and machine learning research at EPFL.
+              Computational neuroscience and artificial intelligence research at EPFL.
             </p>
             <div className="mt-4 flex gap-4">
               <a

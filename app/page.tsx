@@ -43,7 +43,7 @@ export default function Home() {
                   href="#research"
                   className="group relative inline-block underline decoration-foreground/40 decoration-1 underline-offset-4 transition-colors hover:decoration-foreground sm:no-underline"
                 >
-                  <span className="text-gradient">machine learning</span>
+                  <span className="text-gradient">artificial intelligence</span>
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-full bg-foreground/25 sm:block" />
                   <span className="absolute bottom-1 left-0 hidden h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full sm:block" />
                 </Link>
@@ -89,8 +89,8 @@ export default function Home() {
               Research Directions
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We develop machine learning tools for behavioral and neural data analysis,
-              and conversely try to learn from the brain to solve challenging machine learning problems.
+              We develop artificial intelligence tools for behavioral and neural data analysis,
+              and conversely try to learn from the brain to solve challenging artificial intelligence problems.
             </p>
           </div>
 

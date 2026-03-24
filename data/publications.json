@@ -223,12 +223,12 @@
   },
   {
     "id": "seeing-biodiversity-2021",
-    "title": "Seeing biodiversity: perspectives in machine learning for wildlife conservation",
+    "title": "Seeing biodiversity: perspectives in artificial intelligence for wildlife conservation",
     "authors": ["Devis Tuia", "Benjamin Kellenberger", "Sara Beery", "et al.", "Alexander Mathis", "Mackenzie W Mathis", "et al."],
     "year": 2021,
     "venue": "Nature Communications",
     "type": "journal",
-    "tags": ["wildlife conservation", "machine learning", "computer vision"]
+    "tags": ["wildlife conservation", "artificial intelligence", "computer vision"]
   },
   {
     "id": "dlc-primer-2020",

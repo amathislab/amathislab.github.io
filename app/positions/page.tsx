@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export const metadata = {
   title: "Open Positions | Mathis Group",
-  description: "Join our team working on computational neuroscience and machine learning.",
+  description: "Join our team working on computational neuroscience and artificial intelligence.",
 }
 
 export default function PositionsPage() {

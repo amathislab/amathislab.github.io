@@ -1,10 +1,10 @@
 [
   {
     "id": "ml-tools-behavior",
-    "title": "Machine Learning for Behavior Analysis",
+    "title": "Artificial Intelligence for Behavior Analysis",
     "slug": "ml-tools-behavior",
-    "description": "We strive to develop tools for the analysis of animal behavior. Behavior is a complex reflection of an animal's goals, state and character. Thus, accurately measuring behavior is crucial for advancing basic neuroscience, as well as the study of various neural and psychiatric disorders. However, measuring behavior (from video) is also a challenging computer vision and machine learning problem.",
-    "extended": "We are also passionate about wildlife conservation and are thrilled that our tools can contribute beyond Neuroscience. Our work advances machine learning and computer vision to push the state of the art for the analysis of behavior.",
+    "description": "We strive to develop tools for the analysis of animal behavior. Behavior is a complex reflection of an animal's goals, state and character. Thus, accurately measuring behavior is crucial for advancing basic neuroscience, as well as the study of various neural and psychiatric disorders. However, measuring behavior (from video) is also a challenging computer vision and artificial intelligence problem.",
+    "extended": "We are also passionate about wildlife conservation and are thrilled that our tools can contribute beyond Neuroscience. Our work advances artificial intelligence and computer vision to push the state of the art for the analysis of behavior.",
     "tools": [
       {
         "name": "DeepLabCut",

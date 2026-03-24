@@ -15,7 +15,7 @@ export default function AwardsPage() {
       title: "Robert Bing Prize",
       organization: "Swiss Academy of Medical Sciences (SAMS)",
       recipients: "Mackenzie and Alexander Mathis",
-      description: "Honored for groundbreaking contributions to the intersection of neuroscience and machine learning",
+      description: "Honored for groundbreaking contributions to the intersection of neuroscience and artificial intelligence",
       type: "Prize"
     },
     {
@@ -63,7 +63,7 @@ export default function AwardsPage() {
               Awards & Recognition
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Recognition for our contributions to neuroscience and machine learning
+              Recognition for our contributions to neuroscience and artificial intelligence
             </p>
           </div>
         </div>

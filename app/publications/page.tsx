@@ -75,7 +75,7 @@ export default function PublicationsPage() {
               Publications
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              Our research contributions spanning computational neuroscience, machine learning,
+              Our research contributions spanning computational neuroscience, artificial intelligence,
               and computer vision. For a complete list, visit our{" "}
               <a
                 href="https://scholar.google.com/citations?user=Y1xCzE0AAAAJ&hl=en"
