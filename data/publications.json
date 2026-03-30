@@ -10,7 +10,8 @@
     "tags": ["embodied AI", "reinforcement learning", "biomechanics"],
     "links": {
       "github": "https://github.com/amathislab/musclemimic",
-      "website": "https://amathislab.github.io/mm-blog"
+      "website": "https://amathislab.github.io/mm-blog",
+      "arxiv": "https://arxiv.org/abs/2603.25544"
     },
     "featured": true
   },
