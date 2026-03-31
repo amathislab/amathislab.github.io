@@ -144,6 +144,19 @@
     "status": "current"
   },
   {
+    "id": "philippe-forero",
+    "name": "Philippe Forero",
+    "role": "PhD Student",
+    "avatar": "/images/people/philippe-forero.jpg",
+    "project": "Digital patient for planning and control of EES",
+    "cosupervised": "Prof. Grégoire Courtine",
+    "links": {
+      "website": "https://people.epfl.ch/philippe.forero"
+    },
+    "tags": ["Spinal cord stimulation", "Modeling"],
+    "status": "current"
+  },
+  {
     "id": "arash",
     "name": "Arash Sal Moslehian",
     "role": "Master Student",
