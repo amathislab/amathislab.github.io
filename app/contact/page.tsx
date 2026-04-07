@@ -64,17 +64,17 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  <p className="font-semibold">Pauline Stehli</p>
-                  <p className="text-sm text-muted-foreground">Admin Assistant</p>
+                  <p className="font-semibold">Vanessa Ciherean</p>
+                  <p className="text-sm text-muted-foreground">Administrative Assistant</p>
                   <a
-                    href="mailto:pauline.stehli@epfl.ch"
+                    href="mailto:vanessa.ciherean@epfl.ch"
                     className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
                   >
-                    pauline.stehli@epfl.ch
+                    vanessa.ciherean@epfl.ch
                   </a>
                   <p className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Phone className="size-4" />
-                    +41 21 695 52 56
+                    +41 21 693 21 94
                   </p>
                 </div>
               </CardContent>
