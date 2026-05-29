@@ -17,9 +17,9 @@
         "github": "https://github.com/amathislab/DLC2action"
       },
       {
-        "name": "AmadeusGPT",
-        "description": "Natural language interface for behavior analysis",
-        "github": "https://github.com/AdaptiveMotorControlLab/AmadeusGPT"
+        "name": "LLaVAction",
+        "description": "Multi-modal large language models for action understanding",
+        "github": "https://llavaction.epfl.ch"
       },
       {
         "name": "BehaveMAE",
@@ -41,9 +41,9 @@
   },
   {
     "id": "brain-inspired-motor",
-    "title": "Brain-inspired Motor Skill Learning",
+    "title": "Embodied AI & Musculoskeletal Control ",
     "slug": "brain-inspired-motor",
-    "description": "Watching any expert athlete, it is apparent that brains have mastered to elegantly control our bodies. This is an astonishing feat, especially considering the inherent challenges of slow hardware and the sensory and motor latencies that impede control. Understanding how the brain achieves skilled behavior is one of the core questions of neuroscience that we tackle through Modeling using Reinforcement Learning, and Control Theory.",
+    "description": "Watching an expert athlete makes it obvious that brains have mastered the elegant control of our bodies — an astonishing feat given slow biological hardware and the sensory and motor latencies that constantly impede control. Understanding how the brain produces skilled movement is one of the central questions in neuroscience, and building agents that move as capably is one of the hardest open problems in AI. We work on both at once, using reinforcement learning, control theory, and curriculum learning to train biomechanically realistic, muscle-actuated models of the body.",
     "extended": "",
     "tools": [
       {
@@ -75,15 +75,20 @@
   },
   {
     "id": "proprioception",
-    "title": "Task-driven Models of Proprioception",
+    "title": "Task-Driven and Data-Driven Models of Proprioception as well as Sensorimotor Processing",
     "slug": "proprioception",
     "description": "We develop normative theories and models for sensorimotor transformations and learning. Work in the past decade has demonstrated that networks trained on object-recognition tasks provide excellent models for the visual system. Yet, for sensorimotor circuits this fruitful approach is less explored, perhaps due to the lack of datasets like ImageNet.",
     "extended": "",
     "tools": [
       {
-        "name": "proprioceptive illusion",
+        "name": "proprioceptive illusions",
         "description": "Deep-learning models of the ascending proprioceptive pathway are subject to illusions",
         "github": "https://github.com/amathislab/ProprioceptiveIllusions"
+      },
+      {
+        "name": "task-driven primate",
+        "description": "Task-driven neural network models predict neural dynamics of proprioception by Marin Vargas* and Bisi* et al.",
+        "github": "https://github.com/amathislab/Task-driven-Proprioception"
       }
     ],
     "image": [
