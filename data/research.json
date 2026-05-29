@@ -75,7 +75,7 @@
   },
   {
     "id": "proprioception",
-    "title": "Task-Driven and Data-Drive Models of Proprioception as well as Sensorimotor Processing",
+    "title": "Task-Driven and Data-Driven Models of Proprioception as well as Sensorimotor Processing",
     "slug": "proprioception",
     "description": "We develop normative theories and models for sensorimotor transformations and learning. Work in the past decade has demonstrated that networks trained on object-recognition tasks provide excellent models for the visual system. Yet, for sensorimotor circuits this fruitful approach is less explored, perhaps due to the lack of datasets like ImageNet.",
     "extended": "",
