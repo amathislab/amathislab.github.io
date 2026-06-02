@@ -123,7 +123,7 @@
   },
   {
     "id": "smart-kitchen-2025",
-    "title": "EPFL-Smart-Kitchen-30: Densely annotated cooking dataset with 3D kinematics to challenge video and language models",
+    "title": "EPFL-Smart-Kitchen: An Ego-Exo Multi-Modal Dataset for Challenging Action and Motion Understanding in Video-Language Models",
     "image": "/images/publications/esk.png",
     "authors": [
       "A Bonnetto*",
@@ -138,7 +138,7 @@
       "A Mathis"
     ],
     "year": 2025,
-    "venue": "NeurIPS 2025",
+    "venue": "NeurIPS 2025 Datasets and Benchmarks Track",
     "type": "conference",
     "tags": [
       "datasets",
@@ -529,7 +529,11 @@
     "year": 2026,
     "venue": "Current Opinion in Neurobiology",
     "type": "journal",
-    "tags": [],
+    "tags": [
+      "behavior analysis",
+      "computational ethology",
+      "neuroscience"
+    ],
     "links": {
       "doi": "https://doi.org/10.1016/j.conb.2026.103201"
     },
@@ -540,20 +544,25 @@
     "title": "MyoChallenge 2025: A New Benchmark for Human Athletic Intelligence",
     "authors": [
       "C Wang",
-      "CK Tan",
-      "BK Hodossy",
-      "E Lyu",
-      "J Guo",
-      "W Zhao",
-      "H Liu",
+      "...",
       "C Li",
-      "..."
+      "M Simos",
+      "B Ziliotto",
+      "A Mathis",
+      "...",
+      "V Caggiano"
     ],
     "year": 2026,
     "venue": "arXiv preprint arXiv:2605.15650",
     "type": "preprint",
-    "tags": [],
-    "links": {},
+    "tags": [
+      "embodied AI",
+      "motor control",
+      "biomechanics"
+    ],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2605.15650"
+    },
     "featured": false
   },
   {
@@ -570,8 +579,14 @@
     "year": 2026,
     "venue": "arXiv preprint arXiv:2603.28696",
     "type": "preprint",
-    "tags": [],
-    "links": {},
+    "tags": [
+      "video understanding",
+      "multimodal learning",
+      "LLMs"
+    ],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2603.28696"
+    },
     "featured": false
   },
   {
@@ -587,7 +602,11 @@
     "year": 2026,
     "venue": "bioRxiv",
     "type": "preprint",
-    "tags": [],
+    "tags": [
+      "imitation learning",
+      "motor control",
+      "neuroscience"
+    ],
     "links": {
       "doi": "https://doi.org/10.64898/2026.02.01.703133"
     },
@@ -607,30 +626,14 @@
     "year": 2026,
     "venue": "Current Biology",
     "type": "journal",
-    "tags": [],
+    "tags": [
+      "wildlife conservation",
+      "pose estimation",
+      "metric learning"
+    ],
     "links": {
       "doi": "https://doi.org/10.1016/j.cub.2025.12.022"
     },
-    "featured": false
-  },
-  {
-    "id": "epfl-smart-kitchen-an-ego-exo-multi-modal-dataset-2025",
-    "title": "EPFL-Smart-Kitchen: An Ego-Exo Multi-Modal Dataset for Challenging Action and Motion Understanding in Video-Language Models",
-    "authors": [
-      "A Bonnetto",
-      "H Qi",
-      "F Leong",
-      "M Tashkovska",
-      "M Rad",
-      "S Shokur",
-      "F Hummel",
-      "..."
-    ],
-    "year": 2025,
-    "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems …",
-    "type": "conference",
-    "tags": [],
-    "links": {},
     "featured": false
   },
   {
@@ -646,7 +649,11 @@
     "year": 2025,
     "venue": "Foundation Models for the Brain and Body Workshop - NeurIPS",
     "type": "conference",
-    "tags": [],
+    "tags": [
+      "imitation learning",
+      "motor control",
+      "neuroscience"
+    ],
     "links": {},
     "featured": false
   },
@@ -664,7 +671,11 @@
     "year": 2025,
     "venue": "Experimental Physiology",
     "type": "journal",
-    "tags": [],
+    "tags": [
+      "proprioception",
+      "neural networks",
+      "sensorimotor control"
+    ],
     "links": {
       "doi": "https://doi.org/10.1113/ep092313"
     },
@@ -680,7 +691,11 @@
     "year": 2025,
     "venue": "Journal of Neurophysiology",
     "type": "journal",
-    "tags": [],
+    "tags": [
+      "motor control",
+      "behavior analysis",
+      "neuroscience"
+    ],
     "links": {
       "doi": "https://doi.org/10.1152/jn.00140.2025"
     },
@@ -700,7 +715,11 @@
     "year": 2025,
     "venue": "LLM for Scientific Discovery: Reasoning",
     "type": "journal",
-    "tags": [],
+    "tags": [
+      "animal behavior",
+      "vision-language models",
+      "multimodal learning"
+    ],
     "links": {},
     "featured": false
   },
@@ -716,7 +735,11 @@
     "year": 2025,
     "venue": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
     "type": "conference",
-    "tags": [],
+    "tags": [
+      "NLP",
+      "in-context learning",
+      "named entity recognition"
+    ],
     "links": {
       "doi": "https://doi.org/10.18653/v1/2025.naacl-long.518",
       "arxiv": "https://arxiv.org/abs/2412.11923v2"
