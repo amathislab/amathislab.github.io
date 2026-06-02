@@ -923,5 +923,57 @@
       "github": "https://github.com/amathislab/lattice"
     },
     "featured": false
+  },
+  {
+    "id": "out-of-distribution-generalization-of-internal-models-2021",
+    "title": "Out-of-distribution generalization of internal models is correlated with reward",
+    "authors": [
+      "MWM Khushdeep S.* Mann",
+      "Steffen* Schneider",
+      "Alberto Chiappa",
+      "Jin H. Lee ..."
+    ],
+    "year": 2021,
+    "venue": "SSL-RL Workshop at ICLR",
+    "type": "conference",
+    "tags": [],
+    "links": {},
+    "featured": false
+  },
+  {
+    "id": "end-to-end-trainable-multi-instance-pose-estimation-2021",
+    "title": "End-to-End Trainable Multi-Instance Pose Estimation with Transformers",
+    "authors": [
+      "L Stoffl",
+      "M Vidal",
+      "A Mathis"
+    ],
+    "year": 2021,
+    "venue": "arXiv preprint arXiv:2103.12115",
+    "type": "preprint",
+    "tags": [],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2103.12115v2"
+    },
+    "featured": false
+  },
+  {
+    "id": "measuring-and-modeling-the-motor-2021",
+    "title": "Measuring and modeling the motor system with machine learning",
+    "authors": [
+      "SB Hausmann",
+      "AM Vargas",
+      "A Mathis",
+      "MW Mathis"
+    ],
+    "year": 2021,
+    "venue": "Current Opinion in Neurobiology",
+    "type": "journal",
+    "tags": [],
+    "links": {
+      "doi": "https://doi.org/10.1016/j.conb.2021.04.004",
+      "arxiv": "https://arxiv.org/abs/2103.11775v1"
+    },
+    "featured": false
   }
 ]
