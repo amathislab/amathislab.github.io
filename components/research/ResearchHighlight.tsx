@@ -21,6 +21,7 @@ interface Publication {
     biorxiv?: string
     github?: string
     docs?: string
+    doi?: string
   }
   featured?: boolean
 }
@@ -38,7 +39,7 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
   const gridPubs = publications.slice(1)
 
   const getPrimaryLink = (pub: Publication) =>
-    pub.links?.website || pub.links?.arxiv || pub.links?.biorxiv || "#"
+    pub.links?.website || pub.links?.arxiv || pub.links?.biorxiv || pub.links?.doi || "#"
 
   return (
     <section id="research" className="py-24 lg:py-32">
@@ -90,7 +91,7 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                   target="_blank"
                   className="group mb-3 inline-block text-xl font-bold transition-all duration-300 ease-out hover:translate-x-1 hover:text-primary sm:text-2xl"
                 >
-                  <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_2px] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary">
+                  <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary group-hover:bg-[length:100%_2px]">
                     {heroPub.title}
                   </span>
                 </Link>
@@ -145,6 +146,15 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                       </a>
                     </Button>
                   )}
+                  {heroPub.links?.doi && (
+                    <Button asChild variant="outline" size="sm">
+                      <a href={heroPub.links.doi} target="_blank" rel="noopener noreferrer">
+                        <FileText className="mr-2 size-4" />
+                        DOI
+                        <ExternalLink className="ml-2 size-3" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
@@ -183,7 +193,7 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                     target="_blank"
                     className="group mb-3 inline-block text-xl font-bold transition-all duration-300 ease-out hover:translate-x-1 hover:text-primary"
                   >
-                    <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-[length:100%_2px] group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary">
+                    <span className="bg-gradient-to-r from-transparent to-transparent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-300 ease-out group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-primary group-hover:bg-[length:100%_2px]">
                       {pub.title}
                     </span>
                   </Link>
@@ -234,6 +244,15 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                         <a href={pub.links.docs} target="_blank" rel="noopener noreferrer">
                           <FileText className="mr-2 size-4" />
                           Docs
+                          <ExternalLink className="ml-2 size-3" />
+                        </a>
+                      </Button>
+                    )}
+                    {pub.links?.doi && (
+                      <Button asChild variant="outline" size="sm">
+                        <a href={pub.links.doi} target="_blank" rel="noopener noreferrer">
+                          <FileText className="mr-2 size-4" />
+                          DOI
                           <ExternalLink className="ml-2 size-3" />
                         </a>
                       </Button>

@@ -9,6 +9,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import publicationsData from "@/data/publications.json"
 import { useHeaderOffset } from "@/lib/hooks/useHeaderOffset"
 
+interface Publication {
+  id: string
+  title: string
+  authors: string[]
+  year: number
+  venue: string
+  volume?: string
+  pages?: string
+  type: string
+  tags: string[]
+  links?: {
+    arxiv?: string
+    biorxiv?: string
+    github?: string
+    website?: string
+    docs?: string
+    doi?: string
+  }
+}
+
+const publications = publicationsData as Publication[]
+
 export default function PublicationsPage() {
   const [selectedYear, setSelectedYear] = useState<number | null>(null)
   const [selectedType, setSelectedType] = useState<string | null>(null)
@@ -50,10 +72,10 @@ export default function PublicationsPage() {
     }
   }, [headerOffset])
 
-  const years = Array.from(new Set(publicationsData.map(p => p.year))).sort((a, b) => b - a)
-  const types = Array.from(new Set(publicationsData.map(p => p.type)))
+  const years = Array.from(new Set(publications.map(p => p.year))).sort((a, b) => b - a)
+  const types = Array.from(new Set(publications.map(p => p.type)))
 
-  const filteredPublications = publicationsData.filter(pub => {
+  const filteredPublications = publications.filter(pub => {
     if (selectedYear && pub.year !== selectedYear) return false
     if (selectedType && pub.type !== selectedType) return false
     return true
@@ -63,7 +85,7 @@ export default function PublicationsPage() {
     if (!acc[pub.year]) acc[pub.year] = []
     acc[pub.year]!.push(pub)
     return acc
-  }, {} as Record<number, typeof publicationsData>)
+  }, {} as Record<number, Publication[]>)
 
   return (
     <div className="flex flex-col">
@@ -234,6 +256,15 @@ export default function PublicationsPage() {
                                 <a href={pub.links.docs} target="_blank" rel="noopener noreferrer">
                                   <FileText className="mr-2 size-4" />
                                   docs
+                                  <ExternalLink className="ml-2 size-3" />
+                                </a>
+                              </Button>
+                            )}
+                            {pub.links.doi && (
+                              <Button asChild variant="outline" size="sm">
+                                <a href={pub.links.doi} target="_blank" rel="noopener noreferrer">
+                                  <FileText className="mr-2 size-4" />
+                                  DOI
                                   <ExternalLink className="ml-2 size-3" />
                                 </a>
                               </Button>
