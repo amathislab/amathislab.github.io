@@ -1,0 +1,58 @@
+name: Update publications from Google Scholar
+
+on:
+  schedule:
+    # 1st of every month at 06:00 UTC
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+    inputs:
+      since_year:
+        description: "Only consider papers from this year onward (blank = no floor)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test selection logic
+        working-directory: scripts
+        run: python test_update_publications.py
+
+      - name: Detect qualifying publications
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SINCE_YEAR: ${{ github.event.inputs.since_year }}
+        run: python scripts/update_publications.py
+
+      - name: Read PR body
+        id: prbody
+        run: |
+          {
+            echo 'body<<PR_BODY_EOF'
+            cat pr_body.md
+            echo 'PR_BODY_EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: data/publications.json
+          branch: auto/update-publications
+          delete-branch: true
+          commit-message: "chore: add publications from Google Scholar"
+          title: "Auto: new publications from Google Scholar"
+          body: ${{ steps.prbody.outputs.body }}
+          labels: automated, publications
