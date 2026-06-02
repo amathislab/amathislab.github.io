@@ -745,5 +745,183 @@
       "arxiv": "https://arxiv.org/abs/2412.11923v2"
     },
     "featured": false
+  },
+  {
+    "id": "could-chatgpt-get-an-engineering-2024",
+    "title": "Could ChatGPT get an engineering degree? Evaluating higher education vulnerability to AI assistants",
+    "authors": [
+      "Beatriz Borges",
+      "Negar Foroutan",
+      "Deniz Bayazit",
+      "Anna Sotnikova",
+      "Syrielle Montariol",
+      "Tanya Nazaretsky",
+      "Mohammadreza Banaei",
+      "Alireza Sakhaeirad",
+      "Philippe Servant",
+      "Seyed Parsa Neshaei",
+      "Jibril Frej",
+      "Angelika Romanou",
+      "Gail Weiss",
+      "Sepideh Mamooler",
+      "Zeming Chen",
+      "Simin Fan",
+      "Silin Gao",
+      "Mete Ismayilzada",
+      "Debjit Paul",
+      "Philippe Schwaller",
+      "Sacha Friedli",
+      "Patrick Jermann",
+      "Tanja Käser",
+      "Antoine Bosselut",
+      "EPFL Grader Consortium",
+      "EPFL Data Consortium"
+    ],
+    "year": 2024,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "type": "journal",
+    "tags": [
+      "AI assistants",
+      "education",
+      "assessment"
+    ],
+    "links": {
+      "doi": "https://doi.org/10.1073/pnas.2414955121"
+    },
+    "featured": false
+  },
+  {
+    "id": "myochallenge-2023-towards-human-level-dexterity-2024",
+    "title": "MyoChallenge 2023: Towards human-level dexterity and agility",
+    "authors": [
+      "Vittorio Caggiano",
+      "Guillaume Durandau",
+      "Huiyi Wang",
+      "Chun Kwang Tan",
+      "Pierre Schumacher",
+      "Huawei Wang",
+      "Alberto Silvio Chiappa",
+      "Alessandro Marin Vargas",
+      "Alexander Mathis",
+      "Jungdam Won",
+      "Jungnam Park",
+      "Gunwoo Park",
+      "Beomsoo Shin",
+      "Minseung Kim",
+      "Seungbum Koo",
+      "Zhuo Yang",
+      "Wei Dang",
+      "Heng Cai",
+      "Jianfei Song",
+      "Seungmoon Song",
+      "Massimo Sartori",
+      "Vikash Kumar"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024 Datasets and Benchmarks Track",
+    "type": "conference",
+    "tags": [
+      "embodied AI",
+      "motor control",
+      "biomechanics"
+    ],
+    "links": {
+      "website": "https://openreview.net/forum?id=3A84lx1JFh"
+    },
+    "featured": false
+  },
+  {
+    "id": "hoisdf-constraining-3d-hand-object-pose-2024",
+    "title": "HOISDF: Constraining 3D hand-object pose estimation with global signed distance fields",
+    "authors": [
+      "H Qi",
+      "C Zhao",
+      "M Salzmann",
+      "A Mathis"
+    ],
+    "year": 2024,
+    "venue": "CVPR 2024",
+    "type": "conference",
+    "tags": [
+      "3D pose estimation",
+      "hand-object interaction",
+      "computer vision"
+    ],
+    "links": {
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.00989",
+      "arxiv": "https://arxiv.org/abs/2402.17062",
+      "github": "https://github.com/amathislab/HOISDF"
+    },
+    "featured": false
+  },
+  {
+    "id": "modeling-sensorimotor-processing-with-physics-informed-2024",
+    "title": "Modeling Sensorimotor Processing with Physics-Informed Neural Networks",
+    "authors": [
+      "A Perez Rotondo",
+      "A Marin Vargas",
+      "M Dimitriou",
+      "A Mathis"
+    ],
+    "year": 2024,
+    "venue": "bioRxiv",
+    "type": "preprint",
+    "tags": [
+      "proprioception",
+      "physics-informed learning",
+      "sensorimotor control"
+    ],
+    "links": {
+      "doi": "https://doi.org/10.1101/2024.09.14.613030"
+    },
+    "featured": false
+  },
+  {
+    "id": "myochallenge-2022-learning-contact-rich-manipulation-2023",
+    "title": "MyoChallenge 2022: Learning contact-rich manipulation using a musculoskeletal hand",
+    "authors": [
+      "Vittorio Caggiano",
+      "...",
+      "Alberto Chiappa",
+      "Alexander Mathis",
+      "...",
+      "Vikash Kumar"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the NeurIPS 2022 Competitions Track",
+    "type": "conference",
+    "tags": [
+      "embodied AI",
+      "motor control",
+      "biomechanics"
+    ],
+    "links": {
+      "website": "https://proceedings.mlr.press/v220/caggiano23a.html"
+    },
+    "featured": false
+  },
+  {
+    "id": "latent-exploration-for-reinforcement-learning-2023",
+    "title": "Latent exploration for reinforcement learning",
+    "authors": [
+      "AS Chiappa",
+      "A Marin Vargas",
+      "A Huang",
+      "A Mathis"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "type": "conference",
+    "tags": [
+      "reinforcement learning",
+      "exploration",
+      "motor control"
+    ],
+    "links": {
+      "doi": "https://doi.org/10.52202/075280-2466",
+      "arxiv": "https://arxiv.org/abs/2305.20065",
+      "github": "https://github.com/amathislab/lattice"
+    },
+    "featured": false
   }
 ]
