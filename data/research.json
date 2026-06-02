@@ -19,7 +19,7 @@
       {
         "name": "LLaVAction",
         "description": "Multi-modal large language models for action understanding",
-        "github": "https://llavaction.epfl.ch"
+        "website": "https://llavaction.epfl.ch"
       },
       {
         "name": "BehaveMAE",
