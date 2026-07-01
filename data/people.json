@@ -157,6 +157,16 @@
     "status": "current"
   },
   {
+    "id": "laura-bock",
+    "name": "Laura Bock",
+    "role": "PhD Student",
+    "avatar": "/images/people/laura-bock.webp",
+    "project": "ETH Zurich - EPFL Joint Doctoral Program in the Learning Sciences",
+    "cosupervised": "Prof. Manu Kapur",
+    "tags": ["Embodied learning", "Learning science"],
+    "status": "current"
+  },
+  {
     "id": "arash",
     "name": "Arash Sal Moslehian",
     "role": "Master Student",
