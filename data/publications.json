@@ -975,5 +975,26 @@
       "arxiv": "https://arxiv.org/abs/2103.11775v1"
     },
     "featured": false
+  },
+  {
+    "id": "prompting-mammalps-fine-grained-text-to-video-retrieval-for-2026",
+    "title": "Prompting-MammAlps: Fine-Grained Text-to-Video Retrieval for Camera-Trap Data",
+    "authors": [
+      "V Gabeff",
+      "B Maquignaz",
+      "J Shan",
+      "S Mamooler",
+      "G Sumbul",
+      "B Costelloe",
+      "..."
+    ],
+    "year": 2026,
+    "venue": "ECCV (in press) arXiv preprint",
+    "type": "preprint",
+    "tags": [],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2607.09876v1"
+    },
+    "featured": false
   }
 ]
