@@ -11,6 +11,22 @@ export const metadata = {
 export default function AwardsPage() {
   const awards = [
     {
+      date: "June 2026",
+      title: "Winner of the CVPR 2026 OpenSUN3D Challenge",
+      organization: "CVPR OpenSUN3D Challenge",
+      recipients: "Chengkun Li, Haozhe Qi, Alexander Mathis",
+      description: "Winner of the Open-Vocabulary 3D Affordance Grounding track at the CVPR 2026 OpenSUN3D Challenge. The team combined multi-view 3D representations with language-aligned grounding to localize affordances across diverse scenes.",
+      type: "Competition"
+    },
+    {
+      date: "December 2025",
+      title: "NeurIPS 2025 MyoChallenge Track Winner",
+      organization: "NeurIPS MyoChallenge",
+      recipients: "Servette MyoClub (Chengkun Li, Merkourios Simos, Bianca Ziliotto, Alexander Mathis)",
+      description: "Towards Human Athletic Intelligence — winning submission at NeurIPS 2025 MyoChallenge. The team presented a muscle-actuated control approach that achieved soccer penalty kicks.",
+      type: "Competition"
+    },
+    {
       date: "October 2024",
       title: "Robert Bing Prize",
       organization: "Swiss Academy of Medical Sciences (SAMS)",
