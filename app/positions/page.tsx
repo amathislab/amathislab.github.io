@@ -130,6 +130,15 @@ export default function PositionsPage() {
                         Doctoral Program in Computer and Communication Sciences
                         <ExternalLink className="size-3" />
                       </a>
+                      <a
+                        href="https://www.epfl.ch/education/phd/edrs-robotics-control-and-intelligent-systems/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-primary hover:underline"
+                      >
+                        Doctoral Program in Robotics, Control and Intelligent Systems (EDRS)
+                        <ExternalLink className="size-3" />
+                      </a>
                     </div>
                   </div>
                 </div>
