@@ -16,6 +16,19 @@
     "status": "current"
   },
   {
+    "id": "johanni-brea",
+    "name": "Johanni Brea",
+    "role": "Scientist",
+    "avatar": "/images/people/johanni-brea.jpg",
+    "links": {
+      "website": "https://people.epfl.ch/johanni.brea?lang=en",
+      "github": "https://github.com/jbrea",
+      "scholar": "https://scholar.google.com/citations?user=nZ0m0xUAAAAJ&hl=de"
+    },
+    "tags": ["sensorimotor control", "artificial intelligence"],
+    "status": "current"
+  },
+  {
     "id": "haozhe-qi",
     "name": "Haozhe Qi",
     "role": "PhD Student",
@@ -90,8 +103,7 @@
     },
     "tags": ["Representation learning", "multimodal"],
     "status": "current"
-  }
-  ,
+  },
   {
     "id": "chengkun-li",
     "name": "Chengkun Li",
