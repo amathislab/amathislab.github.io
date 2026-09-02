@@ -29,7 +29,9 @@ export default function PeoplePage() {
   const phd = currentMembers.filter(p => p.role === "PhD Student")
   const masters = currentMembers.filter(p => p.role === "Master Student")
   const visiting = currentMembers.filter(p => p.role === "Visiting Scholar")
-  const staff = currentMembers.filter(p => p.role === "Research Staff" || p.role === "Software Engineer")
+  const staff = currentMembers.filter(
+    p => p.role === "Research Staff" || p.role === "Software Engineer" || p.role === "Scientist",
+  )
   const admin = currentMembers.filter(p => p.role === "Lab Administration")
 
   // Prepare images for lightbox - just the URLs

@@ -16,6 +16,16 @@
     "status": "current"
   },
   {
+    "id": "johanni-brea",
+    "name": "Johanni Brea",
+    "role": "Scientist",
+    "avatar": "https://people.epfl.ch/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTMzOTEsImV4cCI6IjIwMjYtMDktMDNUMDc6Mzk6NTIuMTQ1WiIsInB1ciI6ImJsb2JfaWQifX0=--1cf988cb3f15687d93b2038f3d2734d722ca8083/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOls2MDAsNjAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--f0434730233511d2b7f78b3f724fd44f404193e0/257047.jpg?lang=en",
+    "links": {
+      "github": "https://github.com/jbrea"
+    },
+    "status": "current"
+  },
+  {
     "id": "haozhe-qi",
     "name": "Haozhe Qi",
     "role": "PhD Student",
@@ -90,8 +100,7 @@
     },
     "tags": ["Representation learning", "multimodal"],
     "status": "current"
-  }
-  ,
+  },
   {
     "id": "chengkun-li",
     "name": "Chengkun Li",
