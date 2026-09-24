@@ -224,6 +224,17 @@
     "project": "",
     "note": "",
     "tags": ["lab management"],
+    "status": "alumni"
+  },
+  {
+    "id": "laetitia-goncalves",
+    "name": "Laetitia Goncalves",
+    "role": "Lab Administration",
+    "degree": "Staff",
+    "avatar": "/images/people/laetitia-goncalves.jpg",
+    "project": "",
+    "note": "",
+    "tags": ["lab management"],
     "status": "current"
   },
   {

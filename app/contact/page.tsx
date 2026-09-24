@@ -64,17 +64,17 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                  <p className="font-semibold">Vanessa Ciherean</p>
-                  <p className="text-sm text-muted-foreground">Administrative Assistant</p>
+                  <p className="font-semibold">Laetitia Goncalves</p>
+                  <p className="text-sm text-muted-foreground">Administrative Assistant, Prof Alexander Mathis Group</p>
                   <a
-                    href="mailto:vanessa.ciherean@epfl.ch"
+                    href="mailto:laetitia.antunesgoncalves@epfl.ch"
                     className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
                   >
-                    vanessa.ciherean@epfl.ch
+                    laetitia.antunesgoncalves@epfl.ch
                   </a>
                   <p className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Phone className="size-4" />
-                    +41 21 693 21 94
+                    +41 21 693 32 78
                   </p>
                 </div>
               </CardContent>
