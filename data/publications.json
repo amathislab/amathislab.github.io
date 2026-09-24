@@ -994,7 +994,9 @@
     "type": "conference",
     "tags": [],
     "links": {
-      "arxiv": "https://arxiv.org/abs/2607.09876v1"
+      "arxiv": "https://arxiv.org/abs/2607.09876v1",
+      "github": "https://github.com/amathislab/prompting-mammalps/",
+      "website": "https://cnai.epfl.ch/prompting-mammalps/"
     },
     "featured": false
   }
