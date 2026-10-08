@@ -205,6 +205,19 @@
     "status": "current"
   },
   {
+    "id": "alexis-bollack",
+    "name": "Alexis Bollack",
+    "role": "Master Student",
+    "avatar": "/images/people/alexis-bollack.jpg",
+    "project": "Reinforcement learning",
+    "links": {
+      "website": "https://alexisbol.github.io/",
+      "github": "https://github.com/Alexisbol"
+    },
+    "tags": ["reinforcement learning"],
+    "status": "current"
+  },
+  {
     "id": "pauline-stehli",
     "name": "Pauline Stehli",
     "role": "Lab Administration",
