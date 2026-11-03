@@ -29,11 +29,11 @@
   },
   {
     "id": "arnold-2025",
-    "title": "Arnold: a generalist muscle transformer policy",
+    "title": "Arnold: A multi-task, multi-embodiment muscle transformer policy",
     "image": "/images/research/arnold.jpg",
     "authors": [
-      "AS Chiappa",
       "B An",
+      "AS Chiappa",
       "M Simos",
       "C Li",
       "A Mathis"
@@ -47,7 +47,7 @@
       "reinforcement learning"
     ],
     "links": {
-      "arxiv": "https://arxiv.org/abs/2508.18066"
+      "arxiv": "https://arxiv.org/abs/2508.18066v2"
     },
     "featured": true
   },
@@ -997,6 +997,24 @@
       "arxiv": "https://arxiv.org/abs/2607.09876v1",
       "github": "https://github.com/amathislab/prompting-mammalps/",
       "website": "https://cnai.epfl.ch/prompting-mammalps/"
+    },
+    "featured": false
+  },
+  {
+    "id": "terra-terrain-aware-reconstruction-retargeting-and-2026",
+    "title": "TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion",
+    "authors": [
+      "M Simos",
+      "C Li",
+      "B Ziliotto",
+      "A Mathis"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint arXiv:2609.38653",
+    "type": "preprint",
+    "tags": [],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2609.38653v1"
     },
     "featured": false
   }
