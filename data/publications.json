@@ -29,11 +29,11 @@
   },
   {
     "id": "arnold-2025",
-    "title": "Arnold: a generalist muscle transformer policy",
+    "title": "Arnold: A multi-task, multi-embodiment muscle transformer policy",
     "image": "/images/research/arnold.jpg",
     "authors": [
-      "AS Chiappa",
       "B An",
+      "AS Chiappa",
       "M Simos",
       "C Li",
       "A Mathis"
@@ -47,7 +47,7 @@
       "reinforcement learning"
     ],
     "links": {
-      "arxiv": "https://arxiv.org/abs/2508.18066"
+      "arxiv": "https://arxiv.org/abs/2508.18066v2"
     },
     "featured": true
   },
@@ -1015,25 +1015,6 @@
     "tags": [],
     "links": {
       "arxiv": "https://arxiv.org/abs/2609.38653v1"
-    },
-    "featured": false
-  },
-  {
-    "id": "arnold-a-multi-task-multi-embodiment-muscle-2025",
-    "title": "Arnold: A multi-task, multi-embodiment muscle transformer policy",
-    "authors": [
-      "B An",
-      "A Silvio Chiappa",
-      "M Simos",
-      "C Li",
-      "A Mathis"
-    ],
-    "year": 2025,
-    "venue": "arXiv e-prints",
-    "type": "preprint",
-    "tags": [],
-    "links": {
-      "arxiv": "https://arxiv.org/abs/2508.18066v2"
     },
     "featured": false
   }
