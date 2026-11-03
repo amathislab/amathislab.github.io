@@ -38,7 +38,7 @@ export default function PositionsPage() {
                     <Badge variant="outline" className="mb-3">Undergraduate & Master&apos;s</Badge>
                     <CardTitle className="text-2xl">Student Researchers</CardTitle>
                     <CardDescription className="mt-2">
-                      Lab immersions, Thesis, Semester projects, and internships
+                      Lab immersions, Thesis, Semester projects, and Internships
                     </CardDescription>
                   </div>
                 </div>
@@ -46,24 +46,77 @@ export default function PositionsPage() {
               <CardContent>
                 <p className="mb-4 text-muted-foreground">
                   We are always actively mentoring undergraduate and master&apos;s students with
-                  interests in AI4Science, sensorimotor learning, computer vision, robotics, and related fields
+                  interests in AI4Science, sensorimotor learning, computer vision, multimodal AI and foundation models, robotics, and related fields
                   for semester projects and thesis.
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <h4 className="mb-2 text-sm font-medium">Requirements:</h4>
+                    <h4 className="mb-2 font-medium">Requirements:</h4>
                     <ul className="ml-4 list-disc space-y-1 text-sm text-muted-foreground">
                       <li>Background in mathematics, computer science, computational neuroscience, or related fields</li>
                       <li>Self-motivated and high standards for their work</li>
                     </ul>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    <span className="font-medium">Note:</span> Our Open Projects list is only accessible within the EPFL network.
-                    External students, please reach out via our{" "}
-                    <Link href="/contact" className="text-primary hover:underline">
-                      contact page
-                    </Link>.
-                  </p>
+                  <div className="space-y-2">
+                    <h4 className="font-medium">For Bachelor&apos;s and Master&apos;s students at EPFL</h4>
+                    <p className="text-sm text-muted-foreground">
+                      For a semester project or thesis, please review the{" "}
+                      <a
+                        href="https://docs.google.com/document/d/1UPPu1vn89Sp2sLvV6PBgBbIHxcqbWXes2tkJLUaPXLM/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline"
+                      >
+                        Open Projects list
+                        <ExternalLink className="size-3" />
+                      </a>{" "}
+                      and apply using the form below. Bachelor&apos;s students can also apply for a
+                      summer research internship with us through{" "}
+                      <a
+                        href="https://www.epfl.ch/education/bachelor/enhanced-learning-programs/summer-in-the-lab-internship-program/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline"
+                      >
+                        Summer in the Lab
+                        <ExternalLink className="size-3" />
+                      </a>.
+                    </p>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-medium">For students at other universities</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Please apply through{" "}
+                      <a
+                        href="https://summer.epfl.ch/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline"
+                      >
+                        Summer@EPFL
+                        <ExternalLink className="size-3" />
+                      </a>{" "}
+                      or{" "}
+                      <a
+                        href="https://www.epfl.ch/schools/sv/education/summer-research-program/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline"
+                      >
+                        Summer Research Program (SRP)
+                        <ExternalLink className="size-3" />
+                      </a>. More information on joining as an international student is available at{" "}
+                      <a
+                        href="https://www.epfl.ch/education/international/en/coming-to-epfl/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-primary hover:underline"
+                      >
+                        Coming to EPFL
+                        <ExternalLink className="size-3" />
+                      </a>.
+                    </p>
+                  </div>
                 </div>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Button asChild>
