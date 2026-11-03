@@ -4,12 +4,14 @@ import { Code, ExternalLink, FileText, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+import { ProjectPreview, type PreviewVideo } from "@/components/research/ProjectPreview"
 import { Button } from "@/components/ui/button"
 
 interface Publication {
   id: string
   title: string
   image?: string
+  previewVideos?: PreviewVideo[]
   authors: string[]
   year: number
   venue: string
@@ -62,9 +64,15 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
           {/* Hero Card */}
           <div className="rounded-2xl border border-border/50 bg-card p-6 lg:p-8">
             <div className="flex flex-col gap-6">
-              {/* Image Container */}
+              {/* Project Preview */}
               <div className="relative overflow-hidden rounded-xl bg-muted/10 dark:bg-white/95">
-                {heroPub.image ? (
+                {heroPub.previewVideos?.length ? (
+                  <ProjectPreview
+                    videos={heroPub.previewVideos}
+                    href={getPrimaryLink(heroPub)}
+                    title={heroPub.title}
+                  />
+                ) : heroPub.image ? (
                   <Image
                     src={heroPub.image}
                     alt={heroPub.title}
@@ -168,7 +176,13 @@ export function ResearchHighlight({ publications }: ResearchHighlightProps) {
                 className="flex h-full flex-col rounded-xl border border-border/50 bg-card p-4"
               >
                 <div className="mb-6 overflow-hidden rounded-xl bg-muted/10 dark:bg-white/95">
-                  {pub.image ? (
+                  {pub.previewVideos?.length ? (
+                    <ProjectPreview
+                      videos={pub.previewVideos}
+                      href={getPrimaryLink(pub)}
+                      title={pub.title}
+                    />
+                  ) : pub.image ? (
                     <Image
                       src={pub.image}
                       alt={pub.title}
