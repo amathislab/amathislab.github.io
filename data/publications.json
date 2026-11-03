@@ -1,5 +1,37 @@
 [
   {
+    "id": "terra-terrain-aware-reconstruction-retargeting-and-2026",
+    "title": "TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion",
+    "authors": [
+      "M Simos",
+      "C Li",
+      "B Ziliotto",
+      "A Mathis"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint arXiv:2609.38653",
+    "type": "preprint",
+    "tags": [
+      "musculoskeletal control",
+      "motion retargeting",
+      "terrain reconstruction"
+    ],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2609.38653v1",
+      "website": "https://cnai.epfl.ch/terra/",
+      "github": "https://github.com/amathislab/terra"
+    },
+    "featured": true,
+    "image": "/videos/research/terra/overview.webp",
+    "previewVideos": [
+      {
+        "src": "/videos/research/terra/overview.mp4",
+        "poster": "/videos/research/terra/overview.webp",
+        "label": "TERRA terrain-aware musculoskeletal locomotion"
+      }
+    ]
+  },
+  {
     "id": "musclemimic-2026",
     "title": "Towards Embodied AI with MuscleMimic: Unlocking full-body musculoskeletal motor learning at scale",
     "image": "/images/publications/musclemimic.webp",
@@ -22,10 +54,17 @@
     ],
     "links": {
       "github": "https://github.com/amathislab/musclemimic",
-      "website": "https://amathislab.github.io/mm-blog",
+      "website": "https://cnai.epfl.ch/mm-blog/",
       "arxiv": "https://arxiv.org/abs/2603.25544"
     },
-    "featured": true
+    "featured": true,
+    "previewVideos": [
+      {
+        "src": "/videos/research/musclemimic/motion-preview.mp4",
+        "poster": "/videos/research/musclemimic/motion-preview.jpg",
+        "label": "MuscleMimic motion imitation"
+      }
+    ]
   },
   {
     "id": "arnold-2025",
@@ -997,24 +1036,6 @@
       "arxiv": "https://arxiv.org/abs/2607.09876v1",
       "github": "https://github.com/amathislab/prompting-mammalps/",
       "website": "https://cnai.epfl.ch/prompting-mammalps/"
-    },
-    "featured": false
-  },
-  {
-    "id": "terra-terrain-aware-reconstruction-retargeting-and-2026",
-    "title": "TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion",
-    "authors": [
-      "M Simos",
-      "C Li",
-      "B Ziliotto",
-      "A Mathis"
-    ],
-    "year": 2026,
-    "venue": "arXiv preprint arXiv:2609.38653",
-    "type": "preprint",
-    "tags": [],
-    "links": {
-      "arxiv": "https://arxiv.org/abs/2609.38653v1"
     },
     "featured": false
   }
