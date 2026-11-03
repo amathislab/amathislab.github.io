@@ -29,18 +29,6 @@
     "status": "current"
   },
   {
-    "id": "haozhe-qi",
-    "name": "Haozhe Qi",
-    "role": "PhD Student",
-    "avatar": "/images/people/haozhe-qi.jpg",
-    "project": "3D pose estimation & modeling humans",
-    "links": {
-      "website": "https://people.epfl.ch/haozhe.qi"
-    },
-    "tags": ["computer vision", "pose estimation"],
-    "status": "current"
-  },
-  {
     "id": "valentin-gabeff",
     "name": "Valentin Gabeff",
     "role": "PhD Student",
@@ -179,32 +167,6 @@
     "status": "current"
   },
   {
-    "id": "arash",
-    "name": "Arash Sal Moslehian",
-    "role": "Master Student",
-    "avatar": "/images/people/arash-sal-moslehian.jpg",
-    "project": "Sensorimotor control and behavior analysis",
-    "links": {
-      "website": "https://moslehian.com",
-      "scholar": "https://scholar.google.com/citations?user=2eOS1yEAAAAJ",
-      "github": "https://github.com/arashsm79"
-    },
-    "tags": ["sensorimotor control", "behavior analysis", "DeepLabCut"],
-    "status": "current"
-  },
-  {
-    "id": "mateusz-marcol",
-    "name": "Mateusz Marcol",
-    "role": "Master Student",
-    "avatar": "/images/people/mateusz.jpg",
-    "project": "Reinforcement learning",
-    "links": {
-      "website": "https://people.epfl.ch/mateusz.marcol?lang=en"
-    },
-    "tags": ["reinforcement learning"],
-    "status": "current"
-  },
-  {
     "id": "alexis-bollack",
     "name": "Alexis Bollack",
     "role": "Master Student",
@@ -218,28 +180,6 @@
     "status": "current"
   },
   {
-    "id": "pauline-stehli",
-    "name": "Pauline Stehli",
-    "role": "Lab Administration",
-    "degree": "Staff",
-    "avatar": "/images/people/pauline.webp",
-    "project": "",
-    "note": "",
-    "tags": ["lab management"],
-    "status": "alumni"
-  },
-  {
-    "id": "vanessa-ciherean",
-    "name": "Vanessa Ciherean",
-    "role": "Lab Administration",
-    "degree": "Staff",
-    "avatar": "/images/people/vanessa-ciherean.jpg",
-    "project": "",
-    "note": "",
-    "tags": ["lab management"],
-    "status": "alumni"
-  },
-  {
     "id": "laetitia-goncalves",
     "name": "Laetitia Goncalves",
     "role": "Lab Administration",
@@ -251,27 +191,14 @@
     "status": "current"
   },
   {
-    "id": "jaap-de-ruyter",
-    "name": "Jaap de Ruyter van Steveninck",
-    "role": "Software Engineer",
-    "avatar": "/images/people/jaap.jpg",
-    "project": "All things software, including DeepLabCut",
-    "note": "Also works in M.W. Mathis lab",
-    "links": {
-      "website": "https://jaapderuyter.com/",
-      "scholar": "https://scholar.google.nl/citations?user=751H_tMAAAAJ"
-    },
-    "tags": ["software engineering", "DeepLabCut"],
-    "status": "current"
-  },
-  {
-    "id": "maxim-pavliv",
-    "name": "Maxim Pavliv",
-    "role": "Software Engineer",
-    "avatar": "/images/people/max.jpg",
-    "project": "All things software, including DeepLabCut",
-    "note": "Also works in M.W. Mathis lab",
-    "tags": ["software engineering", "DeepLabCut"],
+    "id": "pauline-stehli",
+    "name": "Pauline Stehli",
+    "role": "Lab Administration",
+    "degree": "Staff",
+    "avatar": "/images/people/pauline.webp",
+    "project": "",
+    "note": "",
+    "tags": ["lab management"],
     "status": "alumni"
   },
   {
@@ -339,6 +266,34 @@
     "status": "alumni"
   },
   {
+    "id": "haozhe-qi",
+    "name": "Haozhe Qi",
+    "role": "Alumni",
+    "degree": "PhD",
+    "avatar": "/images/people/haozhe-qi.jpg",
+    "project": "3D pose estimation & modeling humans",
+    "links": {
+      "website": "https://people.epfl.ch/haozhe.qi"
+    },
+    "tags": ["computer vision", "pose estimation"],
+    "status": "alumni"
+  },
+  {
+    "id": "arash",
+    "name": "Arash Sal Moslehian",
+    "role": "Alumni",
+    "degree": "Master Student",
+    "avatar": "/images/people/arash-sal-moslehian.jpg",
+    "project": "Sensorimotor control and behavior analysis",
+    "links": {
+      "website": "https://moslehian.com",
+      "scholar": "https://scholar.google.com/citations?user=2eOS1yEAAAAJ",
+      "github": "https://github.com/arashsm79"
+    },
+    "tags": ["sensorimotor control", "behavior analysis", "DeepLabCut"],
+    "status": "alumni"
+  },
+  {
     "id": "adriana-perez-rotondo",
     "name": "Adriana Perez Rotondo",
     "role": "Alumni",
@@ -363,6 +318,17 @@
       "website": "https://people.epfl.ch/niels.poulsen"
     },
     "tags": ["software engineering"],
+    "status": "alumni"
+  },
+  {
+    "id": "maxim-pavliv",
+    "name": "Maxim Pavliv",
+    "role": "Software Engineer",
+    "degree": "Staff",
+    "avatar": "/images/people/max.jpg",
+    "project": "All things software, including DeepLabCut",
+    "note": "Also works in M.W. Mathis lab",
+    "tags": ["software engineering", "DeepLabCut"],
     "status": "alumni"
   }
 ]
