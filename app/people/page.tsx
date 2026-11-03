@@ -138,6 +138,158 @@ export default function PeoplePage() {
         </section>
       )}
 
+      {/* Research Staff */}
+      {staff.length > 0 && (
+        <section className="bg-muted/30 py-16 lg:py-24">
+          <div className="section-container">
+            <h2 className="mb-8 text-2xl font-bold">Research Staff</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {staff.map((person) => (
+                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
+                  <CardHeader>
+                    <div className="mb-3 flex items-start gap-4">
+                      {person.avatar && (
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                          <img
+                            src={person.avatar}
+                            alt={person.name}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
+                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
+                      </div>
+                    </div>
+                    {person.project && (
+                      <CardDescription className="mt-2">{person.project}</CardDescription>
+                    )}
+                    {person.note && (
+                      <p className="mt-2 text-sm italic text-muted-foreground">{person.note}</p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    {person.links && (
+                      <div className="mb-3 flex flex-wrap gap-3">
+                        {Object.entries(person.links).map(([key, url]) => (
+                          <a
+                            key={key}
+                            href={url as string}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                          >
+                            <ExternalLink className="size-3" />
+                            {key.charAt(0).toUpperCase() + key.slice(1)}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {person.tags && person.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {person.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Lab Administration */}
+      {admin.length > 0 && (
+        <section className="py-16 lg:py-24">
+          <div className="section-container">
+            <h2 className="mb-8 text-2xl font-bold">Lab Administration</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {admin.map((person) => (
+                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
+                  <CardHeader>
+                    <div className="mb-3 flex items-start gap-4">
+                      {person.avatar && (
+                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
+                          <img
+                            src={person.avatar}
+                            alt={person.name}
+                            className="size-full object-cover"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <CardTitle className="text-lg leading-tight">
+                          {getPrimaryLink(person) ? (
+                            <a
+                              href={getPrimaryLink(person) as string}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline"
+                            >
+                              {person.name}
+                            </a>
+                          ) : (
+                            person.name
+                          )}
+                        </CardTitle>
+                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
+                      </div>
+                    </div>
+                    {person.project && (
+                      <CardDescription className="mt-2">{person.project}</CardDescription>
+                    )}
+                    {person.note && (
+                      <p className="mt-2 text-sm italic text-muted-foreground">{person.note}</p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    {person.links && (
+                      <div className="mb-3 flex flex-wrap gap-3">
+                        {Object.entries(person.links).map(([key, url]) => (
+                          <a
+                            key={key}
+                            href={url as string}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
+                          >
+                            <ExternalLink className="size-3" />
+                            {key.charAt(0).toUpperCase() + key.slice(1)}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {person.tags && person.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {person.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                        ))}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* PhD Students */}
       <section className="bg-muted/30 py-16 lg:py-24">
         <div className="section-container">
@@ -360,158 +512,6 @@ export default function PeoplePage() {
                             </a>
                           )
                         })}
-                      </div>
-                    )}
-                    {person.tags && person.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {person.tags.map((tag) => (
-                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
-                        ))}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Research Staff */}
-      {staff.length > 0 && (
-        <section className="py-16 lg:py-24">
-          <div className="section-container">
-            <h2 className="mb-8 text-2xl font-bold">Research Staff</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {staff.map((person) => (
-                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
-                  <CardHeader>
-                    <div className="mb-3 flex items-start gap-4">
-                      {person.avatar && (
-                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
-                          <img
-                            src={person.avatar}
-                            alt={person.name}
-                            className="size-full object-cover"
-                          />
-                        </div>
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">
-                          {getPrimaryLink(person) ? (
-                            <a
-                              href={getPrimaryLink(person) as string}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:underline"
-                            >
-                              {person.name}
-                            </a>
-                          ) : (
-                            person.name
-                          )}
-                        </CardTitle>
-                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
-                      </div>
-                    </div>
-                    {person.project && (
-                      <CardDescription className="mt-2">{person.project}</CardDescription>
-                    )}
-                    {person.note && (
-                      <p className="mt-2 text-sm italic text-muted-foreground">{person.note}</p>
-                    )}
-                  </CardHeader>
-                  <CardContent>
-                    {person.links && (
-                      <div className="mb-3 flex flex-wrap gap-3">
-                        {Object.entries(person.links).map(([key, url]) => (
-                          <a
-                            key={key}
-                            href={url as string}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
-                          >
-                            <ExternalLink className="size-3" />
-                            {key.charAt(0).toUpperCase() + key.slice(1)}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-                    {person.tags && person.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {person.tags.map((tag) => (
-                          <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
-                        ))}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Lab Administration */}
-      {admin.length > 0 && (
-        <section className="bg-muted/30 py-16 lg:py-24">
-          <div className="section-container">
-            <h2 className="mb-8 text-2xl font-bold">Lab Administration</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {admin.map((person) => (
-                <Card key={person.id} className="group transition-all hover:shadow-soft-lg">
-                  <CardHeader>
-                    <div className="mb-3 flex items-start gap-4">
-                      {person.avatar && (
-                        <div className="relative size-28 shrink-0 overflow-hidden rounded-xl ring-2 ring-border">
-                          <img
-                            src={person.avatar}
-                            alt={person.name}
-                            className="size-full object-cover"
-                          />
-                        </div>
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <CardTitle className="text-lg leading-tight">
-                          {getPrimaryLink(person) ? (
-                            <a
-                              href={getPrimaryLink(person) as string}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:underline"
-                            >
-                              {person.name}
-                            </a>
-                          ) : (
-                            person.name
-                          )}
-                        </CardTitle>
-                        <p className="mt-1 text-sm text-muted-foreground">{person.role}</p>
-                      </div>
-                    </div>
-                    {person.project && (
-                      <CardDescription className="mt-2">{person.project}</CardDescription>
-                    )}
-                    {person.note && (
-                      <p className="mt-2 text-sm italic text-muted-foreground">{person.note}</p>
-                    )}
-                  </CardHeader>
-                  <CardContent>
-                    {person.links && (
-                      <div className="mb-3 flex flex-wrap gap-3">
-                        {Object.entries(person.links).map(([key, url]) => (
-                          <a
-                            key={key}
-                            href={url as string}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
-                          >
-                            <ExternalLink className="size-3" />
-                            {key.charAt(0).toUpperCase() + key.slice(1)}
-                          </a>
-                        ))}
                       </div>
                     )}
                     {person.tags && person.tags.length > 0 && (
