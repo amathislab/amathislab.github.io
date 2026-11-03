@@ -46,7 +46,7 @@ export default function PositionsPage() {
               <CardContent>
                 <p className="mb-4 text-muted-foreground">
                   We are always actively mentoring undergraduate and master&apos;s students with
-                  interests in AI4Science, sensorimotor learning, computer vision, multimodal AI and foundation models, robotics, and related fields
+                  interests in AI4Science, computer vision, multimodal AI, foundation models, sensorimotor learning, robotics, embodied AI and related fields
                   for semester projects and thesis.
                 </p>
                 <div className="space-y-3">
