@@ -11,6 +11,14 @@ export const metadata = {
 export default function AwardsPage() {
   const awards = [
     {
+      date: "October 2026",
+      title: "Neuro-X Section Prize for the Best Master's Project in Computational Neuroscience",
+      organization: "EPFL Neuro-X Section",
+      recipients: "Oskar Boesch",
+      description: "Received for the Master's thesis \"Uncovering Hierarchical Structure in Long-Term Natural Rodent Behaviour\", carried out in the lab under the supervision of Alexander Mathis and Michał Grudzień.",
+      type: "Prize"
+    },
+    {
       date: "June 2026",
       title: "Winner of the CVPR 2026 OpenSUN3D Challenge",
       organization: "CVPR OpenSUN3D Challenge",
@@ -39,7 +47,12 @@ export default function AwardsPage() {
       title: "HackaHealth Award",
       organization: "HackaHealth",
       recipients: "Merkourios Simos",
-      description: "Received for his Master's thesis in the lab on imitation learning",
+      description: (
+        <>
+          Received for his Master&apos;s thesis in the lab on imitation learning. This work was later expanded and published at ICRA 2026 as{" "}
+          <a href="https://arxiv.org/abs/2503.14637" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">KINESIS</a>.
+        </>
+      ),
       type: "Award"
     },
     {
